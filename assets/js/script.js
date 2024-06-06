@@ -24,7 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const section = document.querySelector(this.getAttribute('href'));
-      section.scrollIntoView({ behavior: 'smooth' });
+      const offset = -70;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const sectionRect = section.getBoundingClientRect().top;
+      const sectionPosition = sectionRect - bodyRect;
+      const offsetPosition = sectionPosition + offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
 
       setTimeout(highlightLink, 400);
     });
