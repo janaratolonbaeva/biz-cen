@@ -1,0 +1,56 @@
+tailwind.config = {
+  theme: {
+    container: {
+      center: true,
+    },
+    borderRadius: {
+      xs: '6px',
+      DEFAULT: '8px',
+      sm: '10px',
+      md: '12px',
+      lg: '40px',
+      xl: '60px',
+      full: '50%',
+    },
+    fontFamily: {
+      body: ['Helvetica'],
+      second: ['Inter'],
+    },
+    fontSize: {
+      sm: ['14px', '20px'],
+      base: ['16px', '137%'],
+      md: ['18px', '133%'],
+      lg: ['22px', '118%'],
+      '2lg': ['24px', '125%'],
+      xl: ['28px', '121%'],
+      xxl: ['30px', '113%'],
+      '2xl': ['48px', '112%'],
+    },
+    extend: {
+      colors: {
+        dark: '#000',
+        dark_grey: '#a0a0a0',
+        light_grey: '#f5f5f5',
+        white: '#fff',
+        primary: '#013fec',
+        primary_20: 'rgba(1, 63, 236, 0.2)',
+        danger: '#ff0056',
+        warning: '#ff7e46',
+        line_blue: '#dce2fb',
+        line_grey: '#e4e4e4',
+        yellow: '#ff4',
+        pink: '#fc6c8f',
+        violet: '#9568ec',
+        transparent: 'transparent',
+      },
+    },
+    screens: {
+      xs: '450px',
+      sm: '640px',
+      md: '769px',
+      lg: '992px',
+      '2lg': '1100px',
+      xl: '1232px',
+    },
+  },
+};

@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --second-family: 'Inter', sans-serif;
+  --main-dark: #000;
+  --main-dark-grey: #a0a0a0;
+  --main-light-grey: #f5f5f5;
+  --main-white: #fff;
+  --main-blue: #013fec;
+  --main-hover: #ff0056;
+  --main-orange: #ff7e46;
+  --line-blue: #dce2fb;
+  --line-grey: #e4e4e4;
+  --other-yellow: #ff4;
+  --other-pink: #fc6c8f;
+  --other-violet: #9568ec;
+  --transition: all 0.35s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+body {
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  font-variation-settings: 'slnt' 0;
+  color: var(--main-dark);
+  background: var(--main-light-grey);
+}
+
+.container {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.title {
+  font-size: clamp(36px, 5vw, 100px);
+  line-height: 110%;
+}
+
+.btn-burger {
+  transition: var(--transition);
+  z-index: 52;
+}
+
+.btn-burger span {
+  transition: var(--transition);
+}
+
+.btn-burger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(-45deg);
+  width: 22px;
+}
+
+.btn-burger.active span:nth-child(2) {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.btn-burger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(45deg);
+  width: 22px;
+}
+
+.header {
+  transition: all 0.35s ease;
+  z-index: 50;
+}
+
+.header.scroll {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.dropdown-content {
+  height: 0;
+  opacity: 0;
+  transition: height 0.25s ease;
+  transition: opacity 0.35s ease;
+}
+
+.dropdown-content.show {
+  height: auto;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: var(--main-dark-grey);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  color: var(--main-dark-grey);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  color: var(--main-dark-grey);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  color: var(--main-dark-grey);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: var(--main-blue);
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: var(--main-blue);
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: var(--main-blue);
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholde {
+  color: var(--main-blue);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-light-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
+
+.btn-gradient {
+  background: linear-gradient(
+    134deg,
+    #ff8f2e 0%,
+    #fc7059 18%,
+    #fd6279 30%,
+    #e9659d 42.5%,
+    #d669b5 56.5%,
+    #9c6bd2 71.5%,
+    #8966d3 85.5%,
+    #5e57d0 100%
+  );
+}
+
+.btn-gradient:hover,
+.btn-gradient:focus {
+  background: linear-gradient(
+    134deg,
+    #ff861d 0%,
+    #fe5a3f 18%,
+    #ff3a57 30%,
+    #eb3c86 42.5%,
+    #db40ac 56.5%,
+    #794cd8 80.11%,
+    #3b32d4 100%
+  );
+}
+
+.btn-gradient:disabled {
+  opacity: 0.5;
+}
+
+.gradient {
+  background: linear-gradient(
+    134deg,
+    #ff8f2e 0%,
+    #fc7059 18%,
+    #fd6279 30%,
+    #e9659d 42.5%,
+    #d669b5 56.5%,
+    #9c6bd2 71.5%,
+    #8966d3 85.5%,
+    #5e57d0 100%
+  );
+}
+
+.text-gradient {
+  background: linear-gradient(
+    134deg,
+    #ff8f2e 0%,
+    #fc7059 18%,
+    #fd6279 30%,
+    #e9659d 42.5%,
+    #d669b5 56.5%,
+    #9c6bd2 71.5%,
+    #8966d3 85.5%,
+    #5e57d0 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
