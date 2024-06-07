@@ -95,6 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
   inputSend.addEventListener('input', function (e) {
     let value = e.target.value;
     e.target.value = value.replace(/[^+\d\s]/g, '');
+
+    errorText.classList.add('hidden');
   });
 
   btnSend.addEventListener('click', (e) => {
@@ -104,9 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (inputSend.classList.contains('border-danger')) {
         inputSend.classList.remove('border-danger');
         inputSend.classList.add('border-white');
-        errorText.classList.add('hidden');
       }
 
+      errorText.classList.add('hidden');
       formSend.classList.add('hidden');
       successSend.classList.remove('hidden');
       inputSend.value = '';
