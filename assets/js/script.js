@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSend = document.querySelector('.form-send');
   const successSend = document.querySelector('.success-send');
   const btnSendMore = document.querySelector('.btn-send-more');
+  const errorText = document.querySelector('.input-send-error-text');
 
   inputSend.addEventListener('input', function (e) {
     let value = e.target.value;
@@ -100,9 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
 
     if (inputSend.value !== '') {
+      if (inputSend.classList.contains('border-danger')) {
+        inputSend.classList.remove('border-danger');
+        inputSend.classList.add('border-white');
+        errorText.classList.add('hidden');
+      }
+
       formSend.classList.add('hidden');
       successSend.classList.remove('hidden');
       inputSend.value = '';
+    } else {
+      inputSend.classList.remove('border-white');
+      inputSend.classList.add('border-danger');
+      errorText.classList.remove('hidden');
     }
   });
 

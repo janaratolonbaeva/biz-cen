@@ -17,6 +17,7 @@ tailwind.config = {
       second: ['Inter'],
     },
     fontSize: {
+      xs: ['12px', '133%'],
       sm: ['14px', '20px'],
       base: ['16px', '137%'],
       md: ['18px', '28px'],
@@ -35,6 +36,7 @@ tailwind.config = {
         primary: '#013fec',
         primary_20: 'rgba(1, 63, 236, 0.2)',
         danger: '#ff0056',
+        danger_20: 'rgba(255, 0, 86, 0.2)',
         warning: '#ff7e46',
         line_blue: '#dce2fb',
         line_grey: '#e4e4e4',
