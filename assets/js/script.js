@@ -99,6 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   inputSend.addEventListener('focus', function () {
     errorText.classList.add('hidden');
+    inputSend.classList.remove('border-danger');
+    inputSend.classList.add('border-white');
   });
 
   btnSend.addEventListener('click', (e) => {
@@ -110,7 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
         inputSend.classList.add('border-white');
       }
 
-      errorText.classList.add('hidden');
       formSend.classList.add('hidden');
       successSend.classList.remove('hidden');
       inputSend.value = '';
