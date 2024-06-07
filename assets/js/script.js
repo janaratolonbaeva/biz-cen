@@ -91,6 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const successSend = document.querySelector('.success-send');
   const btnSendMore = document.querySelector('.btn-send-more');
 
+  inputSend.addEventListener('input', function (e) {
+    let value = e.target.value;
+    e.target.value = value.replace(/[^+\d\s]/g, '');
+  });
+
   btnSend.addEventListener('click', (e) => {
     e.preventDefault();
 

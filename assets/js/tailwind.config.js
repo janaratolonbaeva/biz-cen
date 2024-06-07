@@ -19,7 +19,7 @@ tailwind.config = {
     fontSize: {
       sm: ['14px', '20px'],
       base: ['16px', '137%'],
-      md: ['18px', '133%'],
+      md: ['18px', '28px'],
       lg: ['22px', '118%'],
       '2lg': ['24px', '125%'],
       xl: ['28px', '121%'],
@@ -48,6 +48,7 @@ tailwind.config = {
       xs: '450px',
       sm: '640px',
       md: '769px',
+      '2md': '930px',
       lg: '992px',
       '2lg': '1100px',
       xl: '1232px',
