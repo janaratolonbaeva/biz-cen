@@ -95,7 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
   inputSend.addEventListener('input', function (e) {
     let value = e.target.value;
     e.target.value = value.replace(/[^+\d\s]/g, '');
+  });
 
+  inputSend.addEventListener('focus', function () {
     errorText.classList.add('hidden');
   });
 
