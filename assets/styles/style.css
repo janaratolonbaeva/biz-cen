@@ -8,8 +8,10 @@
   --main-dark: #000;
   --main-dark-grey: #a0a0a0;
   --main-light-grey: #f5f5f5;
+  --main-light-blue: #f2f5fe;
   --main-white: #fff;
   --main-blue: #013fec;
+  --main-green: #009b22;
   --main-hover: #ff0056;
   --main-orange: #ff7e46;
   --line-blue: #dce2fb;
@@ -48,6 +50,12 @@ body {
 .container {
   width: 100%;
   max-width: 100% !important;
+}
+
+.container-admin {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .title {
@@ -227,7 +235,75 @@ textarea:focus:-moz-placeholde {
 
 @keyframes draw {
   to {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
 
+.input-block fieldset:focus-within {
+  border-color: var(--main-blue);
+  background: #fff;
+}
+
+.input-block fieldset:has(input:invalid) {
+  border-color: var(--main-hover);
+  background: #fff;
+}
+
+.input-block fieldset:has(input:invalid:focus) {
+  border-color: var(--main-blue);
+  background: var(--main-light-blue);
+}
+
+.input-block fieldset:has(input:invalid) ~ p {
+  display: block;
+}
+
+.input-block fieldset:has(input:invalid:focus) ~ p {
+  display: none;
+}
+
+.path {
+  animation: fade 1.5s infinite;
+}
+
+.path1 {
+  animation-delay: 0s;
+}
+
+.path2 {
+  animation-delay: 0.2s;
+}
+
+.path3 {
+  animation-delay: 0.4s;
+}
+
+.path4 {
+  animation-delay: 0.6s;
+}
+
+.path5 {
+  animation-delay: 0.8s;
+}
+
+.path6 {
+  animation-delay: 1s;
+}
+
+.path7 {
+  animation-delay: 1.2s;
+}
+
+.path8 {
+  animation-delay: 1.4s;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

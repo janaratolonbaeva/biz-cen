@@ -10,6 +10,7 @@ tailwind.config = {
       md: '12px',
       lg: '40px',
       xl: '60px',
+      xxl: '100px',
       full: '50%',
     },
     fontFamily: {
@@ -32,9 +33,12 @@ tailwind.config = {
         dark: '#000',
         dark_grey: '#a0a0a0',
         light_grey: '#f5f5f5',
+        light_green: '#f2faf4',
         white: '#fff',
         primary: '#013fec',
         primary_20: 'rgba(1, 63, 236, 0.2)',
+        light_blue: '#f2f5fe',
+        green: '#009b22',
         danger: '#ff0056',
         danger_20: 'rgba(255, 0, 86, 0.2)',
         warning: '#ff7e46',
@@ -44,6 +48,7 @@ tailwind.config = {
         pink: '#fc6c8f',
         violet: '#9568ec',
         transparent: 'transparent',
+        text_grey: '#6e789c',
       },
     },
     screens: {
@@ -54,6 +59,7 @@ tailwind.config = {
       lg: '992px',
       '2lg': '1100px',
       xl: '1232px',
+      xxl: '1400',
     },
   },
 };
