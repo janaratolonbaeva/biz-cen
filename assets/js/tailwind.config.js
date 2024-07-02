@@ -34,6 +34,7 @@ tailwind.config = {
         dark_grey: '#a0a0a0',
         light_grey: '#f5f5f5',
         light_green: '#f2faf4',
+        light_red: '#fbecf1',
         white: '#fff',
         primary: '#013fec',
         primary_20: 'rgba(1, 63, 236, 0.2)',
