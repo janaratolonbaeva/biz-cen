@@ -18,6 +18,7 @@ tailwind.config = {
       second: ['Inter'],
     },
     fontSize: {
+      mini: ['10px', '140%'],
       xs: ['12px', '133%'],
       sm: ['14px', '20px'],
       base: ['16px', '137%'],
@@ -29,9 +30,14 @@ tailwind.config = {
       '2xl': ['48px', '112%'],
     },
     extend: {
+      boxShadow: {
+        DEFAULT: '0 -4px 10px 0 rgba(0, 0, 0, 0.06);',
+      },
       colors: {
         dark: '#000',
         dark_grey: '#a0a0a0',
+        dark_20: 'rgba(0, 0, 0, 0.2)',
+        dark_blue: 'rgb(7, 22, 44)',
         light_grey: '#f5f5f5',
         light_green: '#f2faf4',
         light_red: '#fbecf1',
@@ -50,6 +56,8 @@ tailwind.config = {
         violet: '#9568ec',
         transparent: 'transparent',
         text_grey: '#6e789c',
+        placeholder_text: '#b4b8c9',
+        input_inactive: '#e4e9f8',
       },
     },
     screens: {
@@ -63,4 +71,12 @@ tailwind.config = {
       xxl: '1400',
     },
   },
+  variants: {
+    extend: { textColor: ['peer-disabled'], backgroundColor: ['peer-disabled'] },
+  },
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('peer-disabled', '.peer:disabled ~ &');
+    },
+  ],
 };
