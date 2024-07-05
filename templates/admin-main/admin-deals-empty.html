@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biz-cen.ru | Сделки</title>
+    <link href="../../assets/images/favicon.ico" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles/style.css" />
+    <link rel="stylesheet" href="../../assets/styles/media.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/addons/cleave-phone.ru.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../assets/js/tailwind.config.js"></script>
+  </head>
+  <body>
+    <div class="bg-white p-3 md:px-8 md:py-4">
+      <div class="container-admin">
+        <header class="mb-3 md:mb-4">
+          <div class="flex justify-between items-center">
+            <a href="/"
+              ><img
+                class="w-[89px] h-[20px] md:w-[130px] md:h-[29px]"
+                src="../../assets/images/logo.svg"
+                width="130"
+                height="29"
+                alt="Biz cen logo"
+            /></a>
+            <button class="flex items-center text-primary group hover:text-danger gap-3 md:text-md">
+              Анна
+              <div
+                class="rounded-xs md:rounded bg-light_blue w-[30px] h-[30px] md:w-9 md:h-9 flex justify-center items-center group-hover:bg-light_red"
+              >
+                <svg
+                  width="20"
+                  height="24"
+                  viewBox="0 0 20 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-5 md:w-5 md:h-6"
+                >
+                  <circle cx="10.0001" cy="5.33333" r="5.33333" class="fill-primary group-hover:fill-danger" />
+                  <ellipse
+                    cx="10.0001"
+                    cy="18.6666"
+                    rx="9.33333"
+                    ry="5.33333"
+                    class="fill-primary opacity-40 group-hover:fill-danger"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </header>
+        <nav class="flex justify-between items-center">
+          <ul class="flex gap-2">
+            <li>
+              <a
+                href="admin-deals.html"
+                class="rounded-xs md:rounded py-1.5 px-2.5 md:py-2 md:px-3 bg-primary text-white text-center"
+                >Сделки</a
+              >
+            </li>
+            <li>
+              <a
+                href="admin-operations.html"
+                class="rounded-xs md:rounded py-1.5 px-2.5 md:py-2 md:px-3 bg-light_blue text-primary text-center hover:bg-light_red hover:text-danger"
+                >Операции</a
+              >
+            </li>
+            <li>
+              <a
+                href="admin-requisites.html"
+                class="rounded-xs md:rounded py-1.5 px-2.5 md:py-2 md:px-3 bg-light_blue text-primary text-center hover:bg-light_red hover:text-danger"
+                >Реквизиты</a
+              >
+            </li>
+          </ul>
+          <div class="gap-4 lg:gap-6 items-center hidden md:flex">
+            <p class="border-b border-b-primary_20 whitespace-nowrap leading-4 group hover:border-light_red">
+              <a href="#" class="text-primary text-sm sm:text-base group-hover:text-danger">Условия сотрудничества</a>
+            </p>
+            <button
+              type="button"
+              class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 lg:leading-[28px] w-full text-sm sm:text-base"
+              data-open-popup="popup-send-client"
+            >
+              Передать клиента
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="p-3 md:p-6">
+      <div class="container-admin">
+        <div
+          class="bg-white rounded-md p-4 md:p-6 max-w-[600px] min-h-[190px] flex flex-col justify-between mb-3 md:mb-6"
+        >
+          <h3 class="text-lg md:text-xl font-bold">Доступно для вывода</h3>
+          <div class="flex gap-3 items-center">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[22px] h-[22px] md:w-7 md:h-7"
+            >
+              <g clip-path="url(#clip0_990_552)">
+                <path
+                  d="M20.2474 20.6704C18.9696 20.6704 17.93 19.6308 17.93 18.353V14.5044C17.93 13.2266 18.9696 12.187 20.2474 12.187H26.2858C26.3224 12.187 26.3588 12.1881 26.3949 12.1898V8.35596C26.3949 7.3691 25.5949 6.56909 24.6081 6.56909H2.45367C1.46675 6.56903 0.666748 7.36904 0.666748 8.3559V24.5014C0.666748 25.4883 1.46675 26.2884 2.45367 26.2884H24.6081C25.5949 26.2884 26.3949 25.4883 26.3949 24.5014V20.6676C26.3588 20.6693 26.3224 20.6704 26.2858 20.6704H20.2474Z"
+                  fill="#013FEC"
+                />
+                <path
+                  d="M26.2859 13.4568H20.2475C19.669 13.4568 19.2 13.9258 19.2 14.5044V18.3529C19.2 18.9315 19.669 19.4005 20.2475 19.4005H26.2859C26.8645 19.4005 27.3335 18.9315 27.3335 18.3529V14.5044C27.3335 13.9258 26.8645 13.4568 26.2859 13.4568Z"
+                  fill="#013FEC"
+                />
+                <path
+                  d="M21.4967 3.2959C21.0969 2.08589 19.792 1.42907 18.582 1.82883L9.50415 4.82792H22.0028L21.4967 3.2959Z"
+                  fill="#013FEC"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_990_552">
+                  <rect width="26.6667" height="26.6667" fill="white" transform="translate(0.666748 0.666687)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="inline-block border-b border-b-dark_20 text-xl font-bold">0 ₽</span>
+          </div>
+        </div>
+        <div class="bg-white rounded-md p-4 md:p-6">
+          <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Мои сделки</h3>
+          <div class="flex justify-center items-center py-10 sm:pt-14 sm:pb-20">
+            <div class="flex flex-col gap-3 md:gap-6 items-center">
+              <div
+                class="bg-light_blue w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center"
+              >
+                <svg
+                  width="45"
+                  height="50"
+                  viewBox="0 0 45 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-7 h-[30px] md:w-[45px] md:h-[50px]"
+                >
+                  <path
+                    opacity="0.4"
+                    d="M45 40V15C45 9.47715 40.5228 5 35 5H10C4.47715 5 0 9.47715 0 15V40C0 45.5228 4.47715 50 10 50H35C40.5228 50 45 45.5228 45 40Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.625 20C10.625 18.9645 11.4645 18.125 12.5 18.125H32.5C33.5355 18.125 34.375 18.9645 34.375 20C34.375 21.0355 33.5355 21.875 32.5 21.875H12.5C11.4645 21.875 10.625 21.0355 10.625 20Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.625 30C10.625 28.9645 11.4645 28.125 12.5 28.125H32.5C33.5355 28.125 34.375 28.9645 34.375 30C34.375 31.0355 33.5355 31.875 32.5 31.875H12.5C11.4645 31.875 10.625 31.0355 10.625 30Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.625 40C10.625 38.9645 11.4645 38.125 12.5 38.125H22.5C23.5355 38.125 24.375 38.9645 24.375 40C24.375 41.0355 23.5355 41.875 22.5 41.875H12.5C11.4645 41.875 10.625 41.0355 10.625 40Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    d="M27.5 0H17.5C14.7386 0 12.5 2.23858 12.5 5C12.5 7.76142 14.7386 10 17.5 10H27.5C30.2614 10 32.5 7.76142 32.5 5C32.5 2.23858 30.2614 0 27.5 0Z"
+                    fill="#013FEC"
+                  />
+                </svg>
+              </div>
+              <p class="text-center text-xs md:text-base">Здесь будет отображен список всех переданных клиентов</p>
+              <button
+                type="button"
+                class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base"
+                data-open-popup="popup-send-client"
+              >
+                Передать клиента
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="pb-3 px-3 md:px-6 md:pb-6">
+      <div class="container-admin">
+        <div class="flex flex-col sm:flex-row gap-4 justify-between">
+          <div class="flex flex-col sm:flex-row gap-3 md:gap-6 xs:items-center">
+            <div class="flex gap-3 items-center">
+              <a href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[30px] h-[30px] md:w-8 md:h-8"
+                >
+                  <g clip-path="url(#clip0_1062_6571)">
+                    <path
+                      d="M16.0067 32.0133C24.8469 32.0133 32.0133 24.8469 32.0133 16.0067C32.0133 7.16643 24.8469 0 16.0067 0C7.16643 0 0 7.16643 0 16.0067C0 24.8469 7.16643 32.0133 16.0067 32.0133Z"
+                      fill="url(#paint0_linear_1062_6571)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.23693 15.8334C11.9017 13.8076 15.007 12.4615 16.5664 11.8084C21.0045 9.95584 21.9375 9.63597 22.5372 9.62264C22.6705 9.62264 22.9637 9.6493 23.1636 9.80923C23.3236 9.94251 23.3635 10.1158 23.3902 10.2491C23.4169 10.3823 23.4435 10.6622 23.4169 10.8755C23.177 13.4077 22.1374 19.5518 21.6043 22.3773C21.3777 23.5768 20.9379 23.9767 20.5114 24.0166C19.5785 24.0966 18.8721 23.4036 17.9791 22.8171C16.5664 21.8975 15.78 21.3244 14.4073 20.4181C12.8213 19.3786 13.8475 18.8055 14.7538 17.8725C14.9937 17.6326 19.0853 13.9009 19.1653 13.5677C19.1786 13.5277 19.1786 13.3678 19.0853 13.2878C18.992 13.2078 18.8588 13.2345 18.7521 13.2611C18.6055 13.2878 16.3665 14.7805 12.0083 17.7259C11.3685 18.1658 10.7954 18.379 10.2757 18.3657C9.70257 18.3523 8.60969 18.0458 7.78337 17.7792C6.78379 17.4594 5.98412 17.2861 6.05076 16.7264C6.09074 16.4331 6.49057 16.1399 7.23693 15.8334Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1062_6571"
+                      x1="15.9933"
+                      y1="0"
+                      x2="15.9933"
+                      y2="31.7601"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#2AABEE" />
+                      <stop offset="1" stop-color="#229ED9" />
+                    </linearGradient>
+                    <clipPath id="clip0_1062_6571">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[30px] h-[30px] md:w-8 md:h-8"
+                >
+                  <g clip-path="url(#clip0_1062_6574)">
+                    <path
+                      d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+                      fill="#27D045"
+                    />
+                    <path
+                      d="M16.1345 23.6C20.4055 23.6 23.8678 20.1376 23.8678 15.8666C23.8678 11.5956 20.4055 8.1333 16.1345 8.1333C11.8635 8.1333 8.40112 11.5956 8.40112 15.8666C8.40112 20.1376 11.8635 23.6 16.1345 23.6Z"
+                      stroke="white"
+                      stroke-width="1.86667"
+                    />
+                    <path
+                      d="M9.0665 20.2667L7.83984 24.6133L12.3465 23.36L12.5865 21.9733L9.65316 22.9067L10.4265 20.1067L9.0665 20.2667Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M9.60059 22.9333C9.60059 22.9066 10.5339 19.8133 10.5339 19.8133L12.7739 21.92L9.60059 22.9333Z"
+                      fill="#27D045"
+                    />
+                    <path
+                      d="M12.7914 12.0354C12.5192 12.2244 12.287 12.4654 12.1085 12.7446C11.93 13.0238 11.8086 13.3357 11.7514 13.6621C11.6181 14.7021 12.2581 15.7688 12.2581 15.7688C12.9073 16.7346 13.6781 17.613 14.5514 18.3821C15.3154 18.9866 16.1828 19.4475 17.1114 19.7421C17.6531 19.9584 18.2457 20.0139 18.8181 19.9021C19.3255 19.7628 19.7744 19.4636 20.0981 19.0488C20.1739 18.8601 20.2277 18.6632 20.2581 18.4621C20.2886 18.2856 20.2886 18.1052 20.2581 17.9288C20.2314 17.7421 18.3114 16.8621 18.1248 16.9154C17.9381 16.9688 17.7781 17.3154 17.5647 17.6088C17.3514 17.9021 17.2714 18.0354 17.0581 18.0354C16.8448 18.0354 15.9114 17.6621 15.0314 16.8621C14.5288 16.4263 14.136 15.8781 13.8848 15.2621C13.8848 15.2621 14.0448 15.0754 14.2581 14.7821C14.4241 14.6002 14.5431 14.3805 14.6047 14.1421C14.6047 14.0088 13.8581 12.1154 13.6714 12.0354C13.3795 11.9944 13.0833 11.9944 12.7914 12.0354Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1062_6574">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+            <a href="tel:8126429846" class="text-primary text-sm md:text-md hover:text-danger w-fit">812 642-98-46</a>
+            <a
+              href="mailto:hello@biz-cen.ru"
+              class="text-primary inline-block border-b border-b-primary_20 hover:text-danger leading-[20px] hover:border-b-danger_20 focus:text-danger focus:border-b-danger_20 text-sm md:text-md w-fit"
+              >hello@biz-cen.ru</a
+            >
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 xs:items-center">
+            <a href="#" class="text-primary text-sm md:text-md hover:text-danger w-fit">Оферта</a>
+            <p class="text-sm md:text-md">© 2010–2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-white md:hidden sticky bottom-0 left-0 w-full p-3 shadow z-[50]">
+      <div class="container-admin">
+        <div class="flex gap-4 items-center justify-between">
+          <p>
+            <a
+              href="#"
+              class="text-primary text-sm sm:text-base hover:text-danger border-b border-b-primary_20 group hover:border-light_red"
+              >Условия сотрудничества</a
+            >
+          </p>
+          <button
+            type="button"
+            class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 lg:leading-[28px] text-sm sm:text-base min-w-[175px]"
+            data-open-popup="popup-send-client"
+          >
+            Передать клиента
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup send form -->
+    <div
+      id="popup-send-client"
+      class="modal fade fixed top-0 left-0 w-full h-full bg-dark_blue/20 flex items-center justify-center"
+    >
+      <div
+        class="modal-dialog max-w-[1024px] sm:w-[90%] py-3 px-3 sm:mx-auto relative h-auto max-h-[calc(100%_-_24px)] overflow-y-scroll pointer-none"
+      >
+        <div class="modal-content bg-white rounded-sm md:rounded-md p-3 md:p-8 w-full my-auto">
+          <div class="flex justify-between mb-3 md:mb-4">
+            <h3 class="font-bold text-lg md:text-xl">Передать клиента</h3>
+            <button class="close-popup w-5 h-5 md:w-6 md:h-6 justify-center items-center">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 md:w-[18px] md:h-[18px]"
+              >
+                <path
+                  d="M1 1L17 17M17 1L1 17"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex py-2 sm:py-3 px-3 sm:px-4 gap-2 text-sm sm:text-base sm:gap-2.5 bg-light_blue rounded text-primary mb-4 sm:mb-6 leading-[24px] sm:leading-[30px]"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-none w-6 h-6 sm:w-7 sm:h-7"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.6663 12C23.6663 18.4433 18.443 23.6666 11.9997 23.6666C5.55635 23.6666 0.333008 18.4433 0.333008 12C0.333008 5.55666 5.55635 0.333313 11.9997 0.333313C18.443 0.333313 23.6663 5.55666 23.6663 12ZM13.1663 6.16665C13.1663 6.81098 12.644 7.33331 11.9997 7.33331C11.3553 7.33331 10.833 6.81098 10.833 6.16665C10.833 5.52231 11.3553 4.99998 11.9997 4.99998C12.644 4.99998 13.1663 5.52231 13.1663 6.16665ZM10.833 8.79165C10.3498 8.79165 9.95801 9.1834 9.95801 9.66665C9.95801 10.1499 10.3498 10.5416 10.833 10.5416H11.1247V17.8333C11.1247 18.3166 11.5164 18.7083 11.9997 18.7083C12.4829 18.7083 12.8747 18.3166 12.8747 17.8333V9.66665C12.8747 9.1834 12.4829 8.79165 11.9997 8.79165H10.833Z"
+                fill="#013FEC"
+              />
+            </svg>
+            Работаем только с офисами. Не сможем взять в работу клиентов из других сегментов.
+          </div>
+          <form method="post" id="send-client-form">
+            <div class="flex flex-col md:flex-row gap-2.5 md:gap-3 flex-wrap mb-2.5 md:mb-3">
+              <div id="username-block" class="input-block md:w-[calc(50%_-_6px)]">
+                <fieldset
+                  class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                >
+                  <label for="username" class="text-xs text-text_grey">Имя</label>
+                  <input type="text" class="bg-transparent" name="username" id="username" />
+                </fieldset>
+                <p class="error-text hidden text-danger text-sm"></p>
+              </div>
+              <div id="phone-block" class="input-block md:w-[calc(50%_-_6px)]">
+                <fieldset
+                  class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                >
+                  <label for="phone" class="text-xs text-text_grey after:content-['*']">Телефон</label>
+                  <input type="tel" class="bg-transparent require-input" name="phone" id="phone" />
+                </fieldset>
+                <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+              </div>
+              <div id="footage-block" class="input-block md:w-[calc(50%_-_6px)]">
+                <fieldset
+                  class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                >
+                  <label for="footage" class="text-xs text-text_grey after:content-['*']">Метраж</label>
+                  <input
+                    type="number"
+                    class="bg-transparent placeholder:text-placeholder_text focus:placeholder:text-placeholder_text require-input [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    autocomplete="username"
+                    name="footage"
+                    id="footage"
+                    placeholder="Площадь, м²"
+                  />
+                </fieldset>
+                <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+              </div>
+              <div id="budget-block" class="input-block md:w-[calc(50%_-_6px)]">
+                <fieldset
+                  class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                >
+                  <label class="text-xs text-text_grey">Бюджет</label>
+                  <input
+                    id="budget"
+                    type="number"
+                    class="bg-transparent placeholder:text-placeholder_text focus:placeholder:text-placeholder_text [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    placeholder="Сумма, ₽ "
+                  />
+                </fieldset>
+                <p class="error-text hidden text-danger text-sm"></p>
+              </div>
+            </div>
+            <div class="mb-2.5 md:mb-3">
+              <p class="text-xs text-text_grey mb-1">Город</p>
+              <div class="flex flex-col sm:flex-row gap-2">
+                <label
+                  class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center sm:w-[calc(50%_-_4px)] cursor-pointer gap-3"
+                >
+                  <input type="radio" name="city" class="radio-input hidden peer/moskow" checked />
+                  <span class="text-sm sm:text-base">Москва</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="peer-checked/moskow:hidden w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                  >
+                    <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" fill="white" />
+                    <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="#013FEC" />
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hidden peer-checked/moskow:inline-block w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                  >
+                    <rect width="20" height="20" rx="10" fill="#013FEC" />
+                    <rect x="5" y="5" width="10" height="10" rx="5" fill="white" />
+                  </svg>
+                </label>
+                <label
+                  class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center sm:w-[calc(50%_-_4px)] cursor-pointer gap-3"
+                >
+                  <span class="text-sm sm:text-base">Санкт-Петербург</span>
+                  <input type="radio" name="city" class="radio-input hidden peer/sankt-peterburg" />
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="peer-checked/sankt-peterburg:hidden w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                  >
+                    <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" fill="white" />
+                    <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="#013FEC" />
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hidden peer-checked/sankt-peterburg:inline-block w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                  >
+                    <rect width="20" height="20" rx="10" fill="#013FEC" />
+                    <rect x="5" y="5" width="10" height="10" rx="5" fill="white" />
+                  </svg>
+                </label>
+              </div>
+            </div>
+            <div class="mb-2.5 md:mb-3">
+              <p class="text-xs text-text_grey mb-1">Система получения вознаграждения</p>
+              <div class="flex flex-col sm:flex-row gap-2">
+                <div class="sm:w-[calc(50%_-_4px)]">
+                  <label
+                    class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive peer"
+                  >
+                    <input
+                      id="money-reward"
+                      type="radio"
+                      name="reward"
+                      class="radio-input hidden peer/money peer"
+                      checked
+                    />
+                    <span class="text-sm sm:text-base peer-disabled:text-text_grey"
+                      >Оплата за переданный контакт — <span id="reward-number">1 000</span> ₽
+                    </span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="peer-checked/money:hidden w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                    >
+                      <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" fill="white" />
+                      <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="#013FEC" />
+                    </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="hidden peer-checked/money:inline-block w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                    >
+                      <rect width="20" height="20" rx="10" fill="#013FEC" />
+                      <rect x="5" y="5" width="10" height="10" rx="5" fill="white" />
+                    </svg>
+                  </label>
+                </div>
+                <div class="sm:w-[calc(50%_-_4px)]">
+                  <label
+                    class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive peer"
+                  >
+                    <span class="text-sm sm:text-base peer-disabled:text-text_grey"
+                      >20% от суммы сделки, после заключения договора</span
+                    >
+                    <input
+                      id="percent-reward"
+                      type="radio"
+                      name="reward"
+                      class="radio-input hidden peer/percent peer"
+                    />
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="peer-checked/percent:hidden w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                    >
+                      <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" fill="white" />
+                      <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="#013FEC" />
+                    </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="hidden peer-checked/percent:inline-block w-[18px] sm:w-5 h-[18px] sm:h-5 flex-none"
+                    >
+                      <rect width="20" height="20" rx="10" fill="#013FEC" />
+                      <rect x="5" y="5" width="10" height="10" rx="5" fill="white" />
+                    </svg>
+                  </label>
+                  <p class="text-text_grey text-xs sm:text-sm">Для сделок с бюджетом более 100 000 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4 md:mb-6">
+              <label class="text-xs text-text_grey">Комментарий</label>
+              <input
+                type="text"
+                class="py-2 px-3 md:px-4 border border-line_blue rounded-xs md:rounded placeholder:text-placeholder_text w-full focus:placeholder:text-placeholder_text"
+                placeholder="Район города, доп. информация о клиенте"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="text-white py-[12px] lg:py-3.5 px-6 lg:px-8 bg-primary rounded-xs md:rounded hover:bg-danger focus:bg-danger disabled:opacity-50 lg:leading-[28px] w-full text-sm sm:text-base"
+              >
+                Передать контакт
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end popup send form -->
+
+    <!-- 🟢🟢🟢🟢 success popup -->
+    <div class="modal fade fixed top-0 left-0 w-full h-full bg-dark_blue/20 flex items-center justify-center">
+      <div
+        class="modal-dialog max-w-[1024px] sm:w-[90%] py-3 px-3 sm:mx-auto relative h-[90vh] max-h-[calc(100%_-_24px)] md:max-h-[688px] overflow-y-scroll pointer-none md:h-[70vh]"
+      >
+        <div class="modal-content bg-white rounded-sm md:rounded-md p-3 md:p-8 w-full my-auto h-full flex flex-col">
+          <div class="flex justify-between mb-3 md:mb-4 flex-none">
+            <h3 class="font-bold text-lg md:text-xl">Передать клиента</h3>
+            <button class="close-popup w-5 h-5 md:w-6 md:h-6 justify-center items-center">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 md:w-[18px] md:h-[18px]"
+              >
+                <path
+                  d="M1 1L17 17M17 1L1 17"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center md:items-center grow pt-16 md:pt-0">
+            <div class="flex flex-col gap-3 md:gap-6 max-w-[500px] items-center">
+              <div
+                class="bg-light_green w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center"
+              >
+                <svg
+                  width="51"
+                  height="52"
+                  viewBox="0 0 51 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 md:w-[52px] md:h-[52px]"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.5 51.0823C39.3526 51.0823 50.5823 39.8526 50.5823 26C50.5823 12.1475 39.3526 0.917725 25.5 0.917725C11.6474 0.917725 0.417694 12.1475 0.417694 26C0.417694 39.8526 11.6474 51.0823 25.5 51.0823ZM37.0178 19.6303C37.6557 18.8103 37.5079 17.6284 36.6878 16.9905C35.8678 16.3527 34.6859 16.5004 34.048 17.3205L23.9975 30.2425C23.774 30.5299 23.3537 30.5672 23.0831 30.3236L16.7255 24.6018C15.9533 23.9068 14.7638 23.9694 14.0688 24.7417C13.3738 25.5139 13.4364 26.7034 14.2086 27.3984L20.5662 33.1202C22.4602 34.8248 25.4029 34.5638 26.9673 32.5524L37.0178 19.6303Z"
+                    fill="#009B22"
+                  />
+                </svg>
+              </div>
+              <p class="text-xs md:text-base text-center">
+                Клиент передан, следите за статусом сделки в личном кабинете
+              </p>
+              <button
+                type="button"
+                class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base"
+                data-open-popup="popup-send-client"
+              >
+                Передать клиента
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end success popup -->
+
+    <script>
+      const cleave = new Cleave('#phone', {
+        phone: true,
+        phoneRegionCode: 'RU',
+      });
+
+      const collapseBtns = document.querySelectorAll('.btn-collapse');
+
+      collapseBtns.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          const collapse = btn.closest('.col').querySelector('.content');
+
+          if (collapse.classList.contains('show')) {
+            collapse.style.maxHeight = null;
+            collapse.classList.remove('show');
+          } else {
+            collapse.style.maxHeight = collapse.scrollHeight + 'px';
+            collapse.classList.add('show');
+          }
+        });
+      });
+    </script>
+    <script src="../../assets/js/send-client-form.js"></script>
+  </body>
+</html>
