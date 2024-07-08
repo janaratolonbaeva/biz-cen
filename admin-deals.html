@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/media.css" />
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0"></script>
@@ -891,7 +892,7 @@
               </div>
             </div>
           </div>
-          <div class="pagination flex justify-end gap-1" id="pagination"></div>
+          <div class="tui-pagination flex justify-end gap-1" id="pagination"></div>
         </div>
       </div>
     </div>
@@ -1344,25 +1345,35 @@
     </div>
     <!-- end success popup -->
 
+    <script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js"></script>
     <script>
-      const cleave = new Cleave('#phone', {
-        phone: true,
-        phoneRegionCode: 'RU',
-      });
+      document.addEventListener('DOMContentLoaded', () => {
+        const cleave = new Cleave('#phone', {
+          phone: true,
+          phoneRegionCode: 'RU',
+        });
 
-      const collapseBtns = document.querySelectorAll('.btn-collapse');
+        const collapseBtns = document.querySelectorAll('.btn-collapse');
 
-      collapseBtns.forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-          const collapse = btn.closest('.col').querySelector('.content');
+        collapseBtns.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            const collapse = btn.closest('.col').querySelector('.content');
 
-          if (collapse.classList.contains('show')) {
-            collapse.style.maxHeight = null;
-            collapse.classList.remove('show');
-          } else {
-            collapse.style.maxHeight = collapse.scrollHeight + 'px';
-            collapse.classList.add('show');
-          }
+            if (collapse.classList.contains('show')) {
+              collapse.style.maxHeight = null;
+              collapse.classList.remove('show');
+            } else {
+              collapse.style.maxHeight = collapse.scrollHeight + 'px';
+              collapse.classList.add('show');
+            }
+          });
+        });
+
+        var pagination = new tui.Pagination(document.getElementById('pagination'), {
+          totalItems: 500,
+          itemsPerPage: 10,
+          visiblePages: 5,
+          centerAlign: true,
         });
       });
     </script>

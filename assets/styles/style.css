@@ -361,4 +361,71 @@ textarea:focus:-moz-placeholde {
   transform: translateY(0);
 }
 
+.tui-pagination .tui-first,
+.tui-pagination .tui-last {
+  display: none;
+}
+
+.tui-pagination .tui-first + .tui-prev,
+.tui-pagination .tui-next + .tui-last,
+.tui-pagination .tui-page-btn {
+  border: none;
+}
+
+.tui-pagination .tui-ico-prev {
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMTUgNkw5IDEyTDE1IDE4IiBzdHJva2U9IiMwMTNGRUMiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==');
+  background-size: contain;
+  background-position: 0 0;
+}
+
+.tui-pagination .tui-is-disabled .tui-ico-prev,
+.tui-pagination .tui-is-disabled .tui-ico-next {
+  opacity: 0.2;
+  background-position: 0 0;
+}
+
+.tui-pagination .tui-ico-next {
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb25zIj4KPHBhdGggaWQ9Ikljb24iIGQ9Ik05IDZMMTUgMTJMOSAxOCIgc3Ryb2tlPSIjMDEzRkVDIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPC9zdmc+Cg==');
+  background-size: contain;
+  background-position: 0 0;
+}
+
+.tui-pagination .tui-page-btn:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.tui-pagination .tui-page-btn:not(.tui-next, .tui-prev, .tui-first, .tui-last)
+ {
+  font-family: Helvetica;
+  color: var(--main-blue);
+  font-size: 14px;
+  line-height: 18px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--main-light-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tui-pagination .tui-ico-ellip {
+  margin-top: 8px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACAQMAAABbr9+TAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAT/sAAAA0eO7vQAAAAJ0Uk5T/wDltzBKAAAADklEQVR4nGM0PstofBYABXUCA2CMtJoAAAAASUVORK5CYII=');
+  background-position: 0 0;
+}
+
+.tui-pagination .tui-first-child.tui-is-selected, .tui-pagination .tui-last-child.tui-is-selected {
+  border: none;
+}
+
+.tui-pagination .tui-page-btn.tui-is-selected, .tui-pagination strong.tui-page-btn  {
+  background: var(--main-blue);
+  color: #fff;
+}
+
 
