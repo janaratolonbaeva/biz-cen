@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biz-cen.ru | Операции</title>
-    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+    <title>Biz-cen.ru | Сделки</title>
+    <link href="../../assets/images/favicon.ico" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="assets/styles/media.css" />
+    <link rel="stylesheet" href="../../assets/styles/style.css" />
+    <link rel="stylesheet" href="../../assets/styles/media.css" />
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/addons/cleave-phone.ru.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
+    <script src="../../assets/js/tailwind.config.js"></script>
   </head>
   <body>
     <div class="bg-white p-3 md:px-8 md:py-4">
@@ -24,7 +23,7 @@
             <a href="/"
               ><img
                 class="w-[89px] h-[20px] md:w-[130px] md:h-[29px]"
-                src="assets/images/logo.svg"
+                src="../../assets/images/logo.svg"
                 width="130"
                 height="29"
                 alt="Biz cen logo"
@@ -131,176 +130,78 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <span class="inline-block text-xl font-bold">10 000 ₽</span>
+                <span class="inline-block text-xl font-bold">0 ₽</span>
               </div>
               <button
                 type="button"
                 class="text-white py-[12px] lg:py-3.5 px-6 lg:px-8 bg-primary rounded-xs md:rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base disabled:hover:bg-primary"
+                disabled
               >
                 Вывести
               </button>
+            </div>
+            <div class="flex justify-end">
+              <p class="text-sm">
+                Чтобы вывести средства, заполните
+                <a href="#" class="inline-block border-b border-line_blue text-primary leading-[18px]"
+                  >платежные реквизиты</a
+                >
+              </p>
             </div>
           </div>
         </div>
         <div class="bg-white rounded-md p-4 md:p-6">
           <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">История платежей</h3>
-          <div class="table-block rounded border border-light_blue mb-3 md:mb-6">
-            <div class="col p-3 md:p-4">
-              <div class="flex lg:items-center gap-3 md:gap-4">
-                <div
-                  class="flex-none w-8 h-8 rounded-full md:w-10 md:h-10 flex justify-center items-center bg-light_green"
+          <div class="flex justify-center items-center py-10 sm:pt-14 sm:pb-20">
+            <div class="flex flex-col gap-3 md:gap-6 items-center">
+              <div
+                class="bg-light_blue w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="51"
+                  height="51"
+                  viewBox="0 0 51 51"
+                  fill="none"
+                  class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    class="w-6 h-6 md:w-[30px] md:h-[30px]"
-                  >
-                    <path
-                      d="M15 7.5V22.5M15 7.5L8.75 13.75M15 7.5L21.25 13.75"
-                      stroke="#009B22"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="grow flex flex-col sm:gap-8 sm:flex-row sm:justify-between lg:items-center pr-2">
-                  <div class="mb-1 sm:mb-0 grow">
-                    <p class="mb-1 flex flex-col lg:flex-row lg:gap-2 lg:items-end mb-1 grow">
-                      <span class="text-md md:text-lg font-bold leading-[118%]"
-                        >Вознаграждение за клиента 36 м² / 180 000 ₽ </span
-                      ><span class="text-text_grey text-sm md:text-base">24 июля</span>
-                    </p>
-                    <p class="text-sm md:text-base">
-                      <a href="#" class="border-b border-b-light_blue leading-[18px] text-primary">Сделка № 3</a>
-                    </p>
-                  </div>
-                  <div class="flex-none sm:text-right">
-                    <p class="md:text-md font-bold text-green mb-1 md:mb-2">+ 4 000 ₽</p>
-                    <p class="text-sm md:text-base text-text_grey">Баланс: 10 000 ₽</p>
-                  </div>
-                </div>
+                  <path
+                    d="M17.6564 31.5377C17.4421 31.5377 17.2226 31.543 17.0032 31.543C12.4463 31.543 8.14539 31.0099 4.8897 30.0432C3.21221 29.5467 1.86917 28.951 0.897163 28.2664C0.756066 28.1671 0.62542 28.0678 0.5 27.9685V35.5146C0.5 38.2163 7.88933 40.406 17.0032 40.406C17.4682 40.406 17.9281 40.4008 18.3827 40.3903C17.7191 38.5404 17.3846 36.5963 17.3846 34.6053C17.3847 33.5653 17.4735 32.5411 17.6564 31.5377Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    d="M22.4223 22.4398C23.0964 21.7657 23.8176 21.1542 24.5806 20.6108C22.2499 20.9557 19.6684 21.1386 17.0032 21.1386C12.4463 21.1386 8.14539 20.6056 4.8897 19.6388C3.21221 19.1423 1.86917 18.5466 0.897163 17.862C0.756066 17.7627 0.62542 17.6634 0.5 17.5641V25.0789C0.5 25.2984 0.552258 25.5126 0.646323 25.7268C1.71762 28.1255 8.6314 29.9702 17.0032 29.9702C17.3429 29.9702 17.6825 29.965 18.0169 29.9598C18.2103 29.2647 18.4507 28.5749 18.7381 27.906C19.0569 27.1483 19.4279 26.4219 19.8513 25.7268C20.5619 24.5407 21.4242 23.438 22.4223 22.4398Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    d="M17.0032 11.3508C12.4463 11.3508 8.14539 10.8178 4.8897 9.85099C3.21221 9.35454 1.86917 8.75879 0.897163 8.07421C0.756066 7.97492 0.62542 7.87563 0.5 7.77634V13.7286V14.5124V14.6797C0.5 14.8887 0.547032 15.0977 0.630646 15.2963C1.65491 17.7054 8.59481 19.571 17.0032 19.571C25.4115 19.571 32.3514 17.7054 33.3757 15.2963C33.4593 15.0925 33.5063 14.8887 33.5063 14.6797V14.5124V13.7286V7.77634C33.3809 7.88085 33.2502 7.98014 33.1091 8.07421C32.1371 8.75357 30.794 9.34931 29.1166 9.85099C25.861 10.8178 21.5601 11.3508 17.0032 11.3508Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    d="M33.5064 4.89144C33.5064 4.62492 33.4332 4.36363 33.2921 4.10757C33.1457 3.83582 32.9263 3.57453 32.6389 3.32369C30.4336 1.39013 24.2671 6.10352e-05 17.0032 6.10352e-05C9.73927 6.10352e-05 3.56751 1.39013 1.36749 3.32369C1.08007 3.57453 0.860582 3.83582 0.714259 4.10757C0.573162 4.36363 0.5 4.62492 0.5 4.89144C0.5 7.5932 7.88933 9.78282 17.0032 9.78282C26.117 9.78282 33.5064 7.5932 33.5064 4.89144Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    opacity="0.4"
+                    d="M35.2928 18.8725C35.1308 18.8673 34.9689 18.8621 34.8016 18.8621C34.7024 18.8621 34.6031 18.8621 34.509 18.8673C34.2477 18.8725 33.9864 18.883 33.7251 18.8986C28.7972 19.2331 24.4911 21.8408 21.852 25.6869C20.9793 26.9569 20.2843 28.3679 19.8139 29.8729C19.7303 30.1342 19.6572 30.4007 19.5892 30.6672C19.5213 30.9285 19.4638 31.195 19.4115 31.4563C19.2078 32.4597 19.1033 33.4996 19.1033 34.5605C19.1033 36.5828 19.4848 38.5112 20.1798 40.2827C22.4687 46.12 28.1544 50.2589 34.8016 50.2589C43.4712 50.2589 50.5 43.2301 50.5 34.5605C50.5052 26.058 43.7377 19.1338 35.2928 18.8725Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    d="M28 33.7471H30.0025V24.7501H35.1638C36.1228 24.7501 36.9971 24.8629 37.7868 25.0885C38.5765 25.2953 39.2534 25.6244 39.8175 26.0757C40.3816 26.5081 40.8234 27.0628 41.1431 27.7397C41.4627 28.4166 41.6225 29.2251 41.6225 30.1652C41.6225 31.1054 41.4533 31.9233 41.1149 32.619C40.7764 33.3147 40.3158 33.8976 39.7329 34.3676C39.15 34.8189 38.4637 35.1573 37.674 35.383C36.8843 35.6086 36.0287 35.7214 35.1074 35.7214H32.2588V38.57H36.7997V40.4315H32.2588V44.4083H30.0025V40.4315H28V38.57H30.0025V35.7214H28V33.7471ZM35.1638 33.7471C36.4612 33.7471 37.4766 33.4557 38.2099 32.8728C38.962 32.2711 39.338 31.3686 39.338 30.1652C39.338 28.9619 38.962 28.0875 38.2099 27.5423C37.4766 26.997 36.4612 26.7243 35.1638 26.7243H32.2588V33.7471H35.1638Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
-            </div>
-            <div class="col p-3 md:p-4">
-              <div class="flex lg:items-center gap-3 md:gap-4">
-                <div
-                  class="flex-none w-8 h-8 rounded-full md:w-10 md:h-10 flex justify-center items-center bg-light_green"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    class="w-6 h-6 md:w-[30px] md:h-[30px]"
-                  >
-                    <path
-                      d="M15 7.5V22.5M15 7.5L8.75 13.75M15 7.5L21.25 13.75"
-                      stroke="#009B22"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="grow flex flex-col sm:gap-8 sm:flex-row sm:justify-between lg:items-center pr-2">
-                  <div class="mb-1 sm:mb-0 grow">
-                    <p class="mb-1 flex flex-col lg:flex-row lg:gap-2 lg:items-end mb-1 grow">
-                      <span class="text-md md:text-lg font-bold leading-[118%]">Вознаграждение за клиента 20 м² </span
-                      ><span class="text-text_grey text-sm md:text-base">24 июля</span>
-                    </p>
-                    <p class="text-sm md:text-base">
-                      <a href="#" class="border-b border-b-light_blue leading-[18px] text-primary">Сделка № 3</a>
-                    </p>
-                  </div>
-                  <div class="flex-none sm:text-right">
-                    <p class="md:text-md font-bold text-green mb-1 md:mb-2">+ 6 000 ₽</p>
-                    <p class="text-sm md:text-base text-text_grey">Баланс: 6 000 ₽</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col p-3 md:p-4">
-              <div class="flex lg:items-center gap-3 md:gap-4">
-                <div
-                  class="flex-none w-8 h-8 rounded-full md:w-10 md:h-10 flex justify-center items-center bg-light_red"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    class="w-6 h-6 md:w-[30px] md:h-[30px]"
-                  >
-                    <path
-                      d="M15 7.5V22.5M15 22.5L8.75 16.25M15 22.5L21.25 16.25"
-                      stroke="#FF0056"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="grow flex flex-col sm:gap-8 sm:flex-row sm:justify-between lg:items-center pr-2">
-                  <div class="mb-1 sm:mb-0 grow">
-                    <p class="mb-1 flex flex-col lg:flex-row lg:gap-2 lg:items-end mb-1 grow">
-                      <span class="text-md md:text-lg font-bold leading-[118%]">Вывод средств </span
-                      ><span class="text-text_grey text-sm md:text-base">12 июля</span>
-                    </p>
-                  </div>
-                  <div class="flex-none sm:text-right">
-                    <p class="md:text-md font-bold text-danger mb-1 md:mb-2">- 10 000 ₽</p>
-                    <p class="text-sm md:text-base text-text_grey">Баланс: 0 ₽</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col p-3 md:p-4">
-              <div class="flex lg:items-center gap-3 md:gap-4">
-                <div
-                  class="flex-none w-8 h-8 rounded-full md:w-10 md:h-10 flex justify-center items-center bg-light_green"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    class="w-6 h-6 md:w-[30px] md:h-[30px]"
-                  >
-                    <path
-                      d="M15 7.5V22.5M15 7.5L8.75 13.75M15 7.5L21.25 13.75"
-                      stroke="#009B22"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="grow flex flex-col sm:gap-8 sm:flex-row sm:justify-between lg:items-center pr-2">
-                  <div class="mb-1 sm:mb-0 grow">
-                    <p class="mb-1 flex flex-col lg:flex-row lg:gap-2 lg:items-end mb-1 grow">
-                      <span class="text-md md:text-lg font-bold leading-[118%]">Вознаграждение за клиента 200 м² </span
-                      ><span class="text-text_grey text-sm md:text-base">24 июля</span>
-                    </p>
-                    <p class="text-sm md:text-base">
-                      <a href="#" class="border-b border-b-light_blue leading-[18px] text-primary">Сделка № 3</a>
-                    </p>
-                  </div>
-                  <div class="flex-none sm:text-right">
-                    <p class="md:text-md font-bold text-green mb-1 md:mb-2">+ 10 000 ₽</p>
-                    <p class="text-sm md:text-base text-text_grey">Баланс: 10 000 ₽</p>
-                  </div>
-                </div>
-              </div>
+              <p class="text-center text-xs md:text-base">Здесь будет отображена история платежей завершенных сделок</p>
+              <button
+                type="button"
+                class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base"
+                data-open-popup="popup-send-client"
+              >
+                Передать клиента
+              </button>
             </div>
           </div>
-          <div class="tui-pagination flex justify-end gap-1" id="pagination"></div>
         </div>
       </div>
     </div>
@@ -753,38 +654,28 @@
     </div>
     <!-- end success popup -->
 
-    <script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const cleave = new Cleave('#phone', {
-          phone: true,
-          phoneRegionCode: 'RU',
-        });
+      const cleave = new Cleave('#phone', {
+        phone: true,
+        phoneRegionCode: 'RU',
+      });
 
-        const collapseBtns = document.querySelectorAll('.btn-collapse');
+      const collapseBtns = document.querySelectorAll('.btn-collapse');
 
-        collapseBtns.forEach((btn) => {
-          btn.addEventListener('click', (e) => {
-            const collapse = btn.closest('.col').querySelector('.content');
+      collapseBtns.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          const collapse = btn.closest('.col').querySelector('.content');
 
-            if (collapse.classList.contains('show')) {
-              collapse.style.maxHeight = null;
-              collapse.classList.remove('show');
-            } else {
-              collapse.style.maxHeight = collapse.scrollHeight + 'px';
-              collapse.classList.add('show');
-            }
-          });
-        });
-
-        var pagination = new tui.Pagination(document.getElementById('pagination'), {
-          totalItems: 500,
-          itemsPerPage: 10,
-          visiblePages: 5,
-          centerAlign: true,
+          if (collapse.classList.contains('show')) {
+            collapse.style.maxHeight = null;
+            collapse.classList.remove('show');
+          } else {
+            collapse.style.maxHeight = collapse.scrollHeight + 'px';
+            collapse.classList.add('show');
+          }
         });
       });
     </script>
-    <script src="assets/js/send-client-form.js"></script>
+    <script src="../../assets/js/send-client-form.js"></script>
   </body>
 </html>
