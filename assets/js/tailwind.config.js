@@ -32,6 +32,7 @@ tailwind.config = {
     extend: {
       boxShadow: {
         DEFAULT: '0 -4px 10px 0 rgba(0, 0, 0, 0.06);',
+        md: '0px 0px 10px 0px rgba(0, 0, 0, 0.10);',
       },
       colors: {
         dark: '#000',

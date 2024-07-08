@@ -9,6 +9,7 @@
   --main-dark-grey: #a0a0a0;
   --main-light-grey: #f5f5f5;
   --main-light-blue: #f2f5fe;
+  --main-light-red: #FBECF1;
   --main-white: #fff;
   --main-blue: #013fec;
   --main-green: #009b22;
@@ -435,4 +436,17 @@ textarea:focus:-moz-placeholde {
 .tui-pagination strong.tui-page-btn {
   background: var(--main-blue);
   color: #fff;
+}
+
+[data-dropdown="user-dropdown"].active {
+  color: var(--main-hover);
+}
+
+[data-dropdown="user-dropdown"].active div {
+  background: var(--main-light-red);
+}
+
+[data-dropdown="user-dropdown"].active div ellipse,
+[data-dropdown="user-dropdown"].active div circle {
+  fill: var(--main-hover)
 }
