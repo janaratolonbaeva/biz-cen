@@ -101,6 +101,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const id = btn.getAttribute('data-dropdown');
       const dropdown = document.querySelector(`#${id}`);
+      const items = dropdown.querySelectorAll('li');
+
+      items.forEach((item) => {
+        if (item.classList.contains('dropdown-option')) {
+          if (btn.querySelector('.selected-text').textContent === item.textContent) {
+            item.classList.add('text-primary');
+          } else {
+            item.classList.remove('text-primary');
+          }
+        }
+      });
 
       btn.classList.toggle('active');
       dropdown.classList.toggle('show');
@@ -115,8 +126,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (item.contains(event.target)) {
           dropdown.classList.remove('show');
 
+          dropdown.closest('.dropdown').querySelector('.open-dropdown').classList.remove('active');
+
           if (dropdown.hasAttribute('id') && dropdown.getAttribute('id') === 'user-dropdown') {
             document.querySelector('[data-dropdown="user-dropdown"]').classList.remove('active');
+          }
+
+          if (item.classList.contains('dropdown-option')) {
+            const textSpan = item.closest('.dropdown').querySelector('.selected-text');
+            const id = item.getAttribute('data-value');
+
+            textSpan.classList.remove('no-select');
+            textSpan.textContent = item.textContent;
+            textSpan.setAttribute('id', id);
           }
 
           return;
@@ -130,6 +152,17 @@ document.addEventListener('DOMContentLoaded', () => {
           document.querySelector('[data-dropdown="user-dropdown"]').classList.remove('active');
         }
       }
+
+      dropdown.closest('.dropdown').querySelector('.open-dropdown').classList.remove('active');
+    });
+  });
+
+  // event focus on all inputs
+  const allInputs = document.querySelectorAll('input');
+
+  allInputs.forEach((input) => {
+    input.addEventListener('focus', () => {
+      input.setAttribute('placeholder', '');
     });
   });
 });

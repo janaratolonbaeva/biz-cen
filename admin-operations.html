@@ -793,7 +793,6 @@
               <button
                 type="button"
                 class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base"
-                data-open-popup="popup-send-client"
               >
                 Передать клиента
               </button>
@@ -810,22 +809,6 @@
         const cleave = new Cleave('#phone', {
           phone: true,
           phoneRegionCode: 'RU',
-        });
-
-        const collapseBtns = document.querySelectorAll('.btn-collapse');
-
-        collapseBtns.forEach((btn) => {
-          btn.addEventListener('click', (e) => {
-            const collapse = btn.closest('.col').querySelector('.content');
-
-            if (collapse.classList.contains('show')) {
-              collapse.style.maxHeight = null;
-              collapse.classList.remove('show');
-            } else {
-              collapse.style.maxHeight = collapse.scrollHeight + 'px';
-              collapse.classList.add('show');
-            }
-          });
         });
 
         var pagination = new tui.Pagination(document.getElementById('pagination'), {
