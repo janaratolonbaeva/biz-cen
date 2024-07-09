@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biz-cen.ru | Реквизиты</title>
-    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+    <title>Biz-cen.ru | Профиль</title>
+    <link href="../../assets/images/favicon.ico" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="assets/styles/media.css" />
+    <link rel="stylesheet" href="../../assets/styles/style.css" />
+    <link rel="stylesheet" href="../../assets/styles/media.css" />
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/addons/cleave-phone.ru.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
+    <script src="../../assets/js/tailwind.config.js"></script>
   </head>
   <body>
     <div class="bg-white p-3 md:px-8 md:py-4">
@@ -23,7 +23,7 @@
             <a href="/"
               ><img
                 class="w-[89px] h-[20px] md:w-[130px] md:h-[29px]"
-                src="assets/images/logo.svg"
+                src="../../assets/images/logo.svg"
                 width="130"
                 height="29"
                 alt="Biz cen logo"
@@ -146,508 +146,174 @@
     </div>
     <div class="p-3 md:p-6">
       <div class="container-admin">
+        <div
+          class="flex py-2 sm:py-3 px-3 sm:px-4 gap-2 text-sm sm:text-base sm:gap-2.5 bg-white rounded text-green leading-[24px] sm:leading-[30px] mb-3 md:mb-6"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-none w-6 h-6 sm:w-7 sm:h-7"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.0002 23.6668C18.4435 23.6668 23.6668 18.4435 23.6668 12.0002C23.6668 5.55684 18.4435 0.333496 12.0002 0.333496C5.55684 0.333496 0.333496 5.55684 0.333496 12.0002C0.333496 18.4435 5.55684 23.6668 12.0002 23.6668ZM17.3575 9.0374C17.6542 8.65595 17.5855 8.10621 17.204 7.80952C16.8226 7.51283 16.2728 7.58155 15.9762 7.963L11.3013 13.9735C11.1974 14.1072 11.0018 14.1245 10.876 14.0112L7.91885 11.3498C7.55965 11.0265 7.0064 11.0557 6.68312 11.4149C6.35984 11.7741 6.38896 12.3273 6.74816 12.6506L9.70529 15.312C10.5863 16.1049 11.955 15.9835 12.6827 15.0479L17.3575 9.0374Z"
+              fill="#009B22"
+            />
+          </svg>
+          Профиль обновлен
+        </div>
         <div class="bg-white rounded-md p-4 md:p-6 min-h-[172px] sm:min-h-[436px]">
-          <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Реквизиты</h3>
+          <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Профиль</h3>
           <div class="max-w-[444px]">
-            <div class="dropdown relative mb-2 md:mb-3">
+            <form method="POST">
+              <div class="mb-6 md:mb-8">
+                <h3 class="text-md md:text-lg mb-4 md:mb-6 font-bold">Данные профиля</h3>
+                <div class="flex flex-col gap-2 md:gap-2">
+                  <div class="input-block">
+                    <fieldset
+                      class="rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                    >
+                      <label class="text-xs text-text_grey">Имя*</label>
+                      <input type="tel" class="bg-transparent require-input" name="username" id="username" />
+                    </fieldset>
+                    <p class="error-text hidden text-danger text-sm"></p>
+                  </div>
+                  <div class="input-block">
+                    <fieldset
+                      class="rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                    >
+                      <label class="text-xs text-text_grey">Фамилия</label>
+                      <input type="text" class="bg-transparent" />
+                    </fieldset>
+                    <p class="error-text hidden text-danger text-sm"></p>
+                  </div>
+                  <div id="email-block" class="input-block">
+                    <fieldset
+                      class="rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                    >
+                      <label for="email" class="text-xs text-text_grey">Email (логин)</label>
+                      <input type="email" class="bg-transparent" autocomplete="username" name="email" id="email" />
+                    </fieldset>
+                    <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+                  </div>
+                  <div id="phone-block" class="input-block">
+                    <fieldset
+                      class="rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                    >
+                      <label for="phone" class="text-xs text-text_grey">Телефон*</label>
+                      <input type="tel" class="bg-transparent require-input" name="phone" id="phone" />
+                    </fieldset>
+                    <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+                  </div>
+                  <div class="input-block">
+                    <fieldset
+                      class="rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
+                    >
+                      <label class="text-xs text-text_grey">Компания</label>
+                      <input type="tel" class="bg-transparent" name="username" id="username" />
+                    </fieldset>
+                    <p class="error-text hidden text-danger text-sm"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4 md:mb-6">
+                <h3 class="text-md md:text-lg mb-4 md:mb-6 font-bold">Изменить пароль</h3>
+                <div class="flex flex-col gap-2 md:gap-2">
+                  <div id="password-block" class="input-block">
+                    <fieldset
+                      class="rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14 relative"
+                    >
+                      <label class="text-xs text-text_grey">Пароль</label>
+                      <input id="password" type="password" class="bg-transparent" autocomplete="current-password" />
+                      <button type="button" class="btn-eye absolute right-4 top-4">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="eye-close"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3.46967 4.53033C3.17678 4.23744 3.17678 3.76256 3.46967 3.46967C3.76256 3.17678 4.23744 3.17678 4.53033 3.46967L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L16.6429 17.7036C15.2337 18.4709 13.66 19 12 19C8.18448 19 4.82549 16.2047 2.86971 14.1469C1.7101 12.9268 1.7101 11.0732 2.86971 9.8531C3.69953 8.98001 4.78196 7.97414 6.04468 7.10534L3.46967 4.53033ZM9.41536 10.476C9.15145 10.9227 9 11.4436 9 12C9 13.6569 10.3431 15 12 15C12.5564 15 13.0773 14.8486 13.524 14.5846L9.41536 10.476ZM12 5C15.8155 5 19.1745 7.79533 21.1303 9.8531C22.2899 11.0732 22.2899 12.9268 21.1303 14.1469C20.6902 14.6099 20.1791 15.1103 19.6078 15.6077L9.4127 5.41264C10.2422 5.15256 11.1086 5 12 5Z"
+                            fill="#6E789C"
+                          />
+                        </svg>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="eye-open hidden"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M10.75 0.75C10.75 0.335786 10.4142 0 10 0C9.58579 0 9.25 0.335786 9.25 0.75V2.75C9.25 3.16421 9.58579 3.5 10 3.5C10.4142 3.5 10.75 3.16421 10.75 2.75V0.75ZM1.53033 3.21967C1.23744 2.92678 0.762563 2.92678 0.46967 3.21967C0.176777 3.51256 0.176777 3.98744 0.46967 4.28033L1.96967 5.78033C2.26256 6.07322 2.73744 6.07322 3.03033 5.78033C3.32322 5.48744 3.32322 5.01256 3.03033 4.71967L1.53033 3.21967ZM19.5303 4.28033C19.8232 3.98744 19.8232 3.51256 19.5303 3.21967C19.2374 2.92678 18.7626 2.92678 18.4697 3.21967L16.9697 4.71967C16.6768 5.01256 16.6768 5.48744 16.9697 5.78033C17.2626 6.07322 17.7374 6.07322 18.0303 5.78033L19.5303 4.28033ZM18.8772 10.3211C20.3743 11.7542 20.3743 14.2458 18.8772 15.6789C16.8134 17.6545 13.6042 20 10 20C6.3958 20 3.18661 17.6545 1.12281 15.6789C-0.374268 14.2458 -0.374269 11.7542 1.12281 10.3211C3.18661 8.34551 6.3958 6 10 6C13.6042 6 16.8134 8.34551 18.8772 10.3211ZM13 13C13 14.6569 11.6568 16 9.99997 16C8.34311 16 6.99997 14.6569 6.99997 13C6.99997 11.3431 8.34311 10 9.99997 10C11.6568 10 13 11.3431 13 13Z"
+                            fill="#6E789C"
+                          />
+                        </svg>
+                      </button>
+                    </fieldset>
+                    <p class="error-text hidden text-danger text-sm">Пароли не совпадают</p>
+                  </div>
+                  <div id="new-password-block" class="input-block">
+                    <fieldset
+                      class="rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14 relative"
+                    >
+                      <label class="text-xs text-text_grey">Пароль</label>
+                      <input id="new-password" type="password" class="bg-transparent" autocomplete="current-password" />
+                      <button type="button" class="btn-eye absolute right-4 top-4">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="eye-close"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3.46967 4.53033C3.17678 4.23744 3.17678 3.76256 3.46967 3.46967C3.76256 3.17678 4.23744 3.17678 4.53033 3.46967L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L16.6429 17.7036C15.2337 18.4709 13.66 19 12 19C8.18448 19 4.82549 16.2047 2.86971 14.1469C1.7101 12.9268 1.7101 11.0732 2.86971 9.8531C3.69953 8.98001 4.78196 7.97414 6.04468 7.10534L3.46967 4.53033ZM9.41536 10.476C9.15145 10.9227 9 11.4436 9 12C9 13.6569 10.3431 15 12 15C12.5564 15 13.0773 14.8486 13.524 14.5846L9.41536 10.476ZM12 5C15.8155 5 19.1745 7.79533 21.1303 9.8531C22.2899 11.0732 22.2899 12.9268 21.1303 14.1469C20.6902 14.6099 20.1791 15.1103 19.6078 15.6077L9.4127 5.41264C10.2422 5.15256 11.1086 5 12 5Z"
+                            fill="#6E789C"
+                          />
+                        </svg>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="eye-open hidden"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M10.75 0.75C10.75 0.335786 10.4142 0 10 0C9.58579 0 9.25 0.335786 9.25 0.75V2.75C9.25 3.16421 9.58579 3.5 10 3.5C10.4142 3.5 10.75 3.16421 10.75 2.75V0.75ZM1.53033 3.21967C1.23744 2.92678 0.762563 2.92678 0.46967 3.21967C0.176777 3.51256 0.176777 3.98744 0.46967 4.28033L1.96967 5.78033C2.26256 6.07322 2.73744 6.07322 3.03033 5.78033C3.32322 5.48744 3.32322 5.01256 3.03033 4.71967L1.53033 3.21967ZM19.5303 4.28033C19.8232 3.98744 19.8232 3.51256 19.5303 3.21967C19.2374 2.92678 18.7626 2.92678 18.4697 3.21967L16.9697 4.71967C16.6768 5.01256 16.6768 5.48744 16.9697 5.78033C17.2626 6.07322 17.7374 6.07322 18.0303 5.78033L19.5303 4.28033ZM18.8772 10.3211C20.3743 11.7542 20.3743 14.2458 18.8772 15.6789C16.8134 17.6545 13.6042 20 10 20C6.3958 20 3.18661 17.6545 1.12281 15.6789C-0.374268 14.2458 -0.374269 11.7542 1.12281 10.3211C3.18661 8.34551 6.3958 6 10 6C13.6042 6 16.8134 8.34551 18.8772 10.3211ZM13 13C13 14.6569 11.6568 16 9.99997 16C8.34311 16 6.99997 14.6569 6.99997 13C6.99997 11.3431 8.34311 10 9.99997 10C11.6568 10 13 11.3431 13 13Z"
+                            fill="#6E789C"
+                          />
+                        </svg>
+                      </button>
+                    </fieldset>
+                    <p class="error-text hidden text-danger text-sm">Пароли не совпадают</p>
+                  </div>
+                </div>
+              </div>
               <button
-                class="w-full rounded bg-light_blue pl-3 md:pl-4 py-2 pr-1.5 md:pr-2 text-left open-dropdown"
-                data-dropdown="status-company"
+                type="submit"
+                class="text-white py-[12px] lg:py-3.5 px-6 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full mb-6 text-sm sm:text-base"
               >
-                <div class="flex justify-between w-full items-center">
-                  <div>
-                    <span class="text-xs text-text_grey block mb-1"> Статус юр. лица* </span>
-                    <span id="" class="grow text-sm md:text-base no-select block selected-text"
-                      >ИП, Самозанятый, Компания, Физическое лицо</span
-                    >
-                  </div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    class="flex-none arrow"
-                  >
-                    <path
-                      d="M18 9L12 15L6 9"
-                      stroke="#6E789C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
+                Сохранить
               </button>
-              <ul
-                id="status-company"
-                class="dropdown-content bg-white rounded absolute mt-1 px-3 md:px-4 shadow-md w-full"
-              >
-                <li data-value="IE" class="py-1.5 cursor-pointer dropdown-option hover:text-primary text-xs md:text-sm">
-                  ИП
-                </li>
-                <li data-value="SE" class="py-1.5 cursor-pointer dropdown-option hover:text-primary text-xs md:text-sm">
-                  Самозанятый
-                </li>
-                <li
-                  data-value="company"
-                  class="py-1.5 cursor-pointer dropdown-option hover:text-primary text-xs md:text-sm"
-                >
-                  Компания
-                </li>
-                <li
-                  data-value="individual"
-                  class="py-1.5 cursor-pointer dropdown-option hover:text-primary text-xs md:text-sm"
-                >
-                  Физическое лицо
-                </li>
-              </ul>
-            </div>
-            <div data-content="IE" class="content-inputs hidden">
-              <form method="POST">
-                <div class="mb-6 md:mb-10 flex flex-col gap-2 md:gap-3">
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Наименование юр. лица*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ФИО*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Серия паспорта*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Номер паспорта*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Адрес*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Адрес для корреспонденции*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ИНН*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ОГРН/ОГРНИП*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">КПП*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                </div>
-                <div class="mb-4 md:mb-6">
-                  <h3 class="text-md md:text-lg mb-4 md:mb-6 font-bold">Расчетный счет</h3>
-                  <div class="flex flex-col gap-2 md:gap-3">
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">Расчетный счет*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">Банк*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">БИК*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">Корр.счет*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  type="sumbit"
-                  class="submit-btn text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full text-sm sm:text-base"
-                >
-                  Добавить реквизиты
-                </button>
-              </form>
-            </div>
-            <div data-content="SE" class="content-inputs hidden">
-              <form method="POST">
-                <div class="flex flex-col gap-2 md:gap-3 mb-4 md:mb-6">
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Наименование юр. лица*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ФИО*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Серия паспорта*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Номер паспорта*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Кем выдан*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Код*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Дата выдачи*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Дата рождения*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Адрес регистрации*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Удобный способ получения вознаграждения*</label>
-                      <input type="text" class="bg-transparent" placeholder="Номер карты или по номеру телефона" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                </div>
-                <button
-                  type="sumbit"
-                  class="submit-btn text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full text-sm sm:text-base"
-                >
-                  Добавить реквизиты
-                </button>
-              </form>
-            </div>
-            <div data-content="company" class="content-inputs hidden">
-              <form method="POST">
-                <div class="mb-6 md:mb-10 flex flex-col gap-2 md:gap-3">
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Наименование юр. лица*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ФИО директора*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Адрес*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Адрес для корреспонденции*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ИНН*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ОГРН/ОГРНИП*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">КПП*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                </div>
-                <div class="mb-4 md:mb-6">
-                  <h3 class="text-md md:text-lg mb-4 md:mb-6 font-bold">Расчетный счет</h3>
-                  <div class="flex flex-col gap-2 md:gap-3">
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">Расчетный счет*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">Банк*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">БИК*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                      >
-                        <label class="text-xs text-text_grey">Корр.счет*</label>
-                        <input type="text" class="bg-transparent" />
-                      </fieldset>
-                      <p class="error-text hidden text-danger text-sm"></p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  type="sumbit"
-                  class="submit-btn text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full text-sm sm:text-base"
-                >
-                  Добавить реквизиты
-                </button>
-              </form>
-            </div>
-            <div data-content="individual" class="content-inputs hidden">
-              <form method="POST">
-                <div class="flex flex-col gap-2 md:gap-3 mb-4 md:mb-6">
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">ФИО*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Серия паспорта*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Номер паспорта*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Кем выдан*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Код*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Дата выдачи*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Дата рождения*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Адрес регистрации*</label>
-                      <input type="text" class="bg-transparent" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                  <div class="input-block">
-                    <fieldset
-                      class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
-                    >
-                      <label class="text-xs text-text_grey">Удобный способ получения вознаграждения*</label>
-                      <input type="text" class="bg-transparent" placeholder="Номер карты или по номеру телефона" />
-                    </fieldset>
-                    <p class="error-text hidden text-danger text-sm"></p>
-                  </div>
-                </div>
-                <button
-                  type="sumbit"
-                  class="submit-btn text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full text-sm sm:text-base"
-                >
-                  Добавить реквизиты
-                </button>
-              </form>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -1106,52 +772,9 @@
           phone: true,
           phoneRegionCode: 'RU',
         });
-
-        const selectedText = document.querySelector('.selected-text');
-        const itemsOfStatusClient = document.querySelectorAll('[data-value]');
-        const contentBlocks = document.querySelectorAll('.content-inputs');
-        const submitBtns = document.querySelectorAll('.submit-btn');
-
-        submitBtns.forEach((btn) => {
-          btn.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const inputBlock = btn.closest('form');
-            const inputs = inputBlock.querySelectorAll('input');
-
-            inputs.forEach((input) => {
-              const inputBlock = input.closest('.input-block');
-
-              if (input.value === '') {
-                inputBlock.querySelector('fieldset').classList.add('border-danger', 'bg-white');
-                inputBlock.querySelector('.error-text').textContent = 'Обязательно поле';
-                inputBlock.querySelector('.error-text').classList.remove('hidden');
-              } else {
-                inputBlock.querySelector('fieldset').classList.remove('border-danger', 'bg-white');
-                inputBlock.querySelector('.error-text').textContent = '';
-                inputBlock.querySelector('.error-text').classList.add('hidden');
-              }
-            });
-          });
-        });
-
-        itemsOfStatusClient.forEach((item) => {
-          item.addEventListener('click', (e) => {
-            contentBlocks.forEach((block) => {
-              const itemSelected = item.getAttribute('data-value');
-              const blockAttr = block.getAttribute('data-content');
-              const selectedTextId = selectedText.getAttribute('id');
-
-              if (blockAttr === itemSelected) {
-                block.classList.remove('hidden');
-              } else {
-                block.classList.add('hidden');
-              }
-            });
-          });
-        });
       });
     </script>
-    <script src="assets/js/send-client-form.js"></script>
+    <script src="../../assets/js/login.js"></script>
+    <script src="../../assets/js/send-client-form.js"></script>
   </body>
 </html>
