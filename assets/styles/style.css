@@ -15,13 +15,14 @@
   --main-green: #009b22;
   --main-hover: #ff0056;
   --main-orange: #ff7e46;
-  --line-blue: #dce2fb;
+  --line-blue: #f2f5fe;
   --line-grey: #e4e4e4;
   --other-yellow: #ff4;
   --other-pink: #fc6c8f;
   --other-violet: #9568ec;
   --transition: all 0.35s ease;
   --text-grey: #b4b8c9;
+  --bg-admin-body: #F1F3F8;
 }
 
 html {
@@ -49,6 +50,12 @@ body {
   background: var(--main-light-grey);
 }
 
+.admin-body {
+  background: var(--bg-admin-body);
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .container {
   width: 100%;
   max-width: 100% !important;
@@ -58,6 +65,7 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  
 }
 
 .title {
@@ -258,8 +266,8 @@ textarea:focus:-moz-placeholde {
 }
 
 .input-block fieldset:has(input:invalid:focus) {
-  border-color: var(--main-blue);
-  background: var(--main-light-blue);
+  border-color: var(--main-hover);
+  background: #fff;
 }
 
 .input-block fieldset:has(input:invalid) ~ p {
@@ -350,7 +358,7 @@ textarea:focus:-moz-placeholde {
 .modal {
   display: none;
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out, z-index 0.3s ease-out;
   z-index: -100;
 }
 
@@ -367,6 +375,10 @@ textarea:focus:-moz-placeholde {
 
 .modal.show .modal-dialog {
   transform: translateY(0);
+}
+
+.tui-pagination {
+  align-items: stretch;
 }
 
 .tui-pagination .tui-first,
@@ -410,7 +422,12 @@ textarea:focus:-moz-placeholde {
   margin-left: 4px;
 }
 
-.tui-pagination .tui-page-btn:hover {
+.tui-pagination .tui-page-btn:not(.tui-next, .tui-prev, .tui-first, .tui-last, .tui-is-selected, .tui-next-is-ellip, .tui-prev-is-ellip):hover {
+  background: var(--main-light-red);
+  color: var(--main-hover);
+}
+
+.tui-pagination .tui-next:hover, .tui-pagination .tui-prev:hover, .tui-pagination .tui-first:hover, .tui-pagination .tui-last:hover {
   background-color: transparent;
   opacity: 1;
 }
@@ -421,11 +438,17 @@ textarea:focus:-moz-placeholde {
   font-size: 14px;
   line-height: 18px;
   padding: 4px 8px;
+  width: auto;
   border-radius: 4px;
   background-color: var(--main-light-blue);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tui-pagination .tui-page-btn.tui-next-is-ellip, .tui-pagination .tui-page-btn.tui-prev-is-ellip {
+  padding: 4px 6px;
+  min-height: 28px;
 }
 
 .tui-pagination .tui-ico-ellip {

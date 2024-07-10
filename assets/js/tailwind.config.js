@@ -59,6 +59,8 @@ tailwind.config = {
         text_grey: '#6e789c',
         placeholder_text: '#b4b8c9',
         input_inactive: '#e4e9f8',
+        hover_social_btn: '#EAEEFA',
+        hover_table_col: '#F9FBFF',
       },
     },
     screens: {

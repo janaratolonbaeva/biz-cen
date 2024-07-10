@@ -15,7 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../../assets/js/tailwind.config.js"></script>
   </head>
-  <body>
+  <body class="admin-body">
     <div class="bg-white p-3 md:px-8 md:py-4">
       <div class="container-admin">
         <header class="mb-3 md:mb-4">
@@ -23,17 +23,13 @@
             <a href="/"
               ><img
                 class="w-[89px] h-[20px] md:w-[130px] md:h-[29px]"
-                src="../../assets/images/logo.svg"
+                src="assets/images/logo.svg"
                 width="130"
                 height="29"
                 alt="Biz cen logo"
             /></a>
-            <div class="relative dropdown">
-              <button
-                type="button"
-                class="open-dropdown flex items-center text-primary group hover:text-danger gap-3 md:text-md"
-                data-dropdown="user-dropdown"
-              >
+            <div class="relative dropdown group">
+              <button type="button" class="flex items-center text-primary group-hover:text-danger gap-3 md:text-md">
                 Анна
                 <div
                   class="rounded-xs md:rounded bg-light_blue w-[30px] h-[30px] md:w-9 md:h-9 flex justify-center items-center group-hover:bg-light_red"
@@ -57,51 +53,50 @@
                   </svg>
                 </div>
               </button>
-              <ul
-                id="user-dropdown"
-                class="dropdown-content absolute right-0 px-3 md:px-4 w-fit bg-white rounded-sm shadow-md mt-2"
-              >
-                <li class="border-b border-b-light_blue whitespace-nowrap">
-                  <a href="#" class="flex items-center gap-1 md:gap-2 group w-full py-3 md:py-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="w-5 h-5 md:w-6 md:h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.0455 3H12.9545C14.0089 3 14.8636 3.80589 14.8636 4.8C14.8636 5.93762 16.0808 6.66088 17.08 6.11698L17.1815 6.06174C18.0946 5.56468 19.2622 5.85966 19.7894 6.72058L20.7439 8.27943C21.2711 9.14036 20.9582 10.2412 20.0451 10.7383C19.0455 11.2824 19.0455 12.7176 20.0451 13.2617C20.9582 13.7588 21.2711 14.8596 20.7439 15.7206L19.7894 17.2794C19.2622 18.1403 18.0946 18.4353 17.1815 17.9383L17.08 17.883C16.0808 17.3391 14.8636 18.0624 14.8636 19.2C14.8636 20.1941 14.0089 21 12.9545 21H11.0455C9.99109 21 9.13635 20.1941 9.13635 19.2C9.13635 18.0624 7.91917 17.3391 6.92 17.883L6.81851 17.9383C5.90541 18.4353 4.73782 18.1404 4.21064 17.2794L3.25609 15.7206C2.72891 14.8597 3.04176 13.7588 3.95487 13.2617C4.95451 12.7176 4.95451 11.2824 3.95487 10.7383C3.04176 10.2412 2.72891 9.14034 3.25609 8.27942L4.21064 6.72057C4.73782 5.85964 5.90541 5.56467 6.81852 6.06172L6.92 6.11697C7.91917 6.66087 9.13635 5.93761 9.13635 4.8C9.13635 3.80589 9.99109 3 11.0455 3ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z"
-                        class="fill-primary group-hover:fill-danger"
-                      />
-                    </svg>
-                    <span class="text-sm md:text-base">Настройки профиля</span>
-                  </a>
-                </li>
-                <li class="border-b border-b-light_blue whitespace-nowrap">
-                  <button class="flex items-center gap-1 md:gap-2 group w-full py-3 md:py-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="21"
-                      height="18"
-                      viewBox="0 0 21 18"
-                      fill="none"
-                      class="w-5 h-5 md:w-6 md:h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.75 0.25C2.12665 0.25 0 2.37665 0 5V13C0 15.6234 2.12665 17.75 4.75 17.75H12C14.6234 17.75 16.75 15.6234 16.75 13C16.75 12.5858 16.4142 12.25 16 12.25C15.5858 12.25 15.25 12.5858 15.25 13C15.25 14.7949 13.7949 16.25 12 16.25H7.46412C8.26157 15.4003 8.75 14.2572 8.75 13V5C8.75 3.74279 8.26157 2.59965 7.46412 1.75H12C13.7949 1.75 15.25 3.20507 15.25 5C15.25 5.41421 15.5858 5.75 16 5.75C16.4142 5.75 16.75 5.41421 16.75 5C16.75 2.37665 14.6234 0.25 12 0.25H4.75ZM17.1464 11.5303C16.8536 11.2374 16.8536 10.7626 17.1464 10.4697L17.8661 9.75H11.75C11.3358 9.75 11 9.41421 11 9C11 8.58579 11.3358 8.25 11.75 8.25H17.8661L17.1464 7.53033C16.8536 7.23744 16.8536 6.76256 17.1464 6.46967C17.4393 6.17678 17.9142 6.17678 18.2071 6.46967L19.5 7.76256C20.1834 8.44598 20.1834 9.55402 19.5 10.2374L18.2071 11.5303C17.9142 11.8232 17.4393 11.8232 17.1464 11.5303Z"
-                        class="fill-primary group-hover:fill-danger"
-                      />
-                    </svg>
-                    <span class="text-sm md:text-base">Выйти</span>
-                  </button>
-                </li>
-              </ul>
+              <div class="hidden group-hover:block hover:block pt-2 absolute right-0">
+                <ul class="px-3 md:px-4 w-fit bg-white rounded-sm shadow-md">
+                  <li class="border-b border-b-light_blue whitespace-nowrap">
+                    <a href="profile.html" class="flex items-center gap-1 md:gap-2 group/link w-full py-3 md:py-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="w-5 h-5 md:w-6 md:h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.0455 3H12.9545C14.0089 3 14.8636 3.80589 14.8636 4.8C14.8636 5.93762 16.0808 6.66088 17.08 6.11698L17.1815 6.06174C18.0946 5.56468 19.2622 5.85966 19.7894 6.72058L20.7439 8.27943C21.2711 9.14036 20.9582 10.2412 20.0451 10.7383C19.0455 11.2824 19.0455 12.7176 20.0451 13.2617C20.9582 13.7588 21.2711 14.8596 20.7439 15.7206L19.7894 17.2794C19.2622 18.1403 18.0946 18.4353 17.1815 17.9383L17.08 17.883C16.0808 17.3391 14.8636 18.0624 14.8636 19.2C14.8636 20.1941 14.0089 21 12.9545 21H11.0455C9.99109 21 9.13635 20.1941 9.13635 19.2C9.13635 18.0624 7.91917 17.3391 6.92 17.883L6.81851 17.9383C5.90541 18.4353 4.73782 18.1404 4.21064 17.2794L3.25609 15.7206C2.72891 14.8597 3.04176 13.7588 3.95487 13.2617C4.95451 12.7176 4.95451 11.2824 3.95487 10.7383C3.04176 10.2412 2.72891 9.14034 3.25609 8.27942L4.21064 6.72057C4.73782 5.85964 5.90541 5.56467 6.81852 6.06172L6.92 6.11697C7.91917 6.66087 9.13635 5.93761 9.13635 4.8C9.13635 3.80589 9.99109 3 11.0455 3ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z"
+                          class="fill-primary group-hover/link:fill-danger"
+                        />
+                      </svg>
+                      <span class="text-sm md:text-base">Настройки профиля</span>
+                    </a>
+                  </li>
+                  <li class="border-b border-b-light_blue whitespace-nowrap">
+                    <button class="flex items-center gap-1 md:gap-2 group/link w-full py-3 md:py-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="18"
+                        viewBox="0 0 21 18"
+                        fill="none"
+                        class="w-5 h-5 md:w-6 md:h-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.75 0.25C2.12665 0.25 0 2.37665 0 5V13C0 15.6234 2.12665 17.75 4.75 17.75H12C14.6234 17.75 16.75 15.6234 16.75 13C16.75 12.5858 16.4142 12.25 16 12.25C15.5858 12.25 15.25 12.5858 15.25 13C15.25 14.7949 13.7949 16.25 12 16.25H7.46412C8.26157 15.4003 8.75 14.2572 8.75 13V5C8.75 3.74279 8.26157 2.59965 7.46412 1.75H12C13.7949 1.75 15.25 3.20507 15.25 5C15.25 5.41421 15.5858 5.75 16 5.75C16.4142 5.75 16.75 5.41421 16.75 5C16.75 2.37665 14.6234 0.25 12 0.25H4.75ZM17.1464 11.5303C16.8536 11.2374 16.8536 10.7626 17.1464 10.4697L17.8661 9.75H11.75C11.3358 9.75 11 9.41421 11 9C11 8.58579 11.3358 8.25 11.75 8.25H17.8661L17.1464 7.53033C16.8536 7.23744 16.8536 6.76256 17.1464 6.46967C17.4393 6.17678 17.9142 6.17678 18.2071 6.46967L19.5 7.76256C20.1834 8.44598 20.1834 9.55402 19.5 10.2374L18.2071 11.5303C17.9142 11.8232 17.4393 11.8232 17.1464 11.5303Z"
+                          class="fill-primary group-hover/link:fill-danger"
+                        />
+                      </svg>
+                      <span class="text-sm md:text-base">Выйти</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </header>
@@ -110,32 +105,36 @@
             <li>
               <a
                 href="admin-deals.html"
-                class="rounded-xs md:rounded py-1.5 px-2.5 md:py-2 md:px-3 bg-light_blue text-primary text-center hover:bg-light_red hover:text-danger"
+                class="rounded-xs md:rounded py-[7px] px-2.5 md:py-[9px] md:px-3 bg-light_blue text-primary text-center hover:bg-light_red hover:text-danger leading-[18px] md:leading-[20px] text-sm md:text-base"
                 >Сделки</a
               >
             </li>
             <li>
               <a
                 href="admin-operations.html"
-                class="rounded-xs md:rounded py-1.5 px-2.5 md:py-2 md:px-3 bg-primary text-white text-center"
+                class="rounded-xs md:rounded py-[7px] px-2.5 md:py-[9px] md:px-3 bg-primary text-white text-center leading-[18px] md:leading-[20px] text-sm md:text-base"
                 >Операции</a
               >
             </li>
             <li>
               <a
                 href="admin-requisites.html"
-                class="rounded-xs md:rounded py-1.5 px-2.5 md:py-2 md:px-3 bg-light_blue text-primary text-center hover:bg-light_red hover:text-danger"
+                class="rounded-xs md:rounded py-[7px] px-2.5 md:py-[9px] md:px-3 bg-light_blue text-primary text-center hover:bg-light_red hover:text-danger leading-[18px] md:leading-[20px] text-sm md:text-base"
                 >Реквизиты</a
               >
             </li>
           </ul>
           <div class="gap-4 lg:gap-6 items-center hidden md:flex">
-            <p class="border-b border-b-primary_20 whitespace-nowrap leading-4 group hover:border-light_red">
-              <a href="#" class="text-primary text-sm sm:text-base group-hover:text-danger">Условия сотрудничества</a>
+            <p class="whitespace-nowrap">
+              <a
+                href="terms-of-cooperation.html"
+                class="text-primary text-sm sm:text-base hover:text-danger border-b border-b-primary_20 group hover:border-b-light_red leading-[22px]"
+                >Условия сотрудничества</a
+              >
             </p>
             <button
               type="button"
-              class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full text-sm sm:text-base"
+              class="open-popup text-white py-3 md:py-[14px] px-6 md:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary leading-[18px] md:leading-[20px] w-full text-sm md:text-base"
               data-open-popup="popup-send-client"
             >
               Передать клиента
@@ -147,9 +146,9 @@
     <div class="p-3 md:p-6">
       <div class="container-admin">
         <div
-          class="bg-white rounded-md p-4 md:p-6 max-w-[600px] min-h-[190px] flex flex-col justify-between mb-3 md:mb-6 gap-10 xs:gap-1"
+          class="bg-white rounded-md p-4 md:p-6 max-w-[600px] md:min-h-[188px] flex flex-col justify-between mb-3 md:mb-6"
         >
-          <h3 class="text-lg md:text-xl font-bold">Баланс</h3>
+          <h3 class="text-lg md:text-xl font-bold mb-10 md:mb-0">Баланс</h3>
           <div>
             <div class="flex flex-col xs:flex-row xs:justify-between mb-1 gap-4">
               <div class="flex gap-3 items-center">
@@ -185,7 +184,7 @@
               </div>
               <button
                 type="button"
-                class="text-white py-[12px] lg:py-3.5 px-6 lg:px-8 bg-primary rounded-xs md:rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base disabled:hover:bg-primary"
+                class="text-white py-3 md:py-[14px] px-6 md:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary leading-[18px] md:leading-[20px] w-full xs:w-fit text-sm md:text-base"
                 disabled
               >
                 Вывести
@@ -246,7 +245,7 @@
               <p class="text-center text-xs md:text-base">Здесь будет отображена история платежей завершенных сделок</p>
               <button
                 type="button"
-                class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base"
+                class="open-popup text-white py-3 md:py-[14px] px-6 md:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary leading-[18px] md:leading-[20px] w-full xs:w-fit text-sm md:text-base"
                 data-open-popup="popup-send-client"
               >
                 Передать клиента
@@ -259,7 +258,7 @@
     <footer class="pb-3 px-3 md:px-6 md:pb-6">
       <div class="container-admin">
         <div class="flex flex-col sm:flex-row gap-4 justify-between">
-          <div class="flex flex-col sm:flex-row gap-3 md:gap-6 xs:items-center">
+          <div class="flex flex-col sm:flex-row gap-3 md:gap-6 sm:items-center">
             <div class="flex gap-3 items-center">
               <a href="#">
                 <svg
@@ -343,30 +342,34 @@
             <a href="tel:8126429846" class="text-primary text-sm md:text-md hover:text-danger w-fit">812 642-98-46</a>
             <a
               href="mailto:hello@biz-cen.ru"
-              class="text-primary inline-block border-b border-b-primary_20 hover:text-danger leading-[20px] hover:border-b-danger_20 focus:text-danger focus:border-b-danger_20 text-sm md:text-md w-fit"
+              class="text-primary inline-block border-b border-b-primary_20 hover:text-danger leading-[18px] md:leading-[24px] hover:border-b-danger_20 focus:text-danger focus:border-b-danger_20 text-sm md:text-md w-fit"
               >hello@biz-cen.ru</a
             >
           </div>
-          <div class="flex flex-col sm:flex-row gap-4 xs:items-center">
-            <a href="#" class="text-primary text-sm md:text-md hover:text-danger w-fit">Оферта</a>
+          <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
+            <a
+              href="offer.html"
+              class="text-primary inline-block border-b border-b-primary_20 hover:text-danger leading-[18px] md:leading-[24px] hover:border-b-danger_20 focus:text-danger focus:border-b-danger_20 text-sm md:text-md w-fit"
+              >Оферта</a
+            >
             <p class="text-sm md:text-md">© 2010–2024</p>
           </div>
         </div>
       </div>
     </footer>
-    <div class="bg-white md:hidden sticky bottom-0 left-0 w-full p-3 shadow z-[50]">
+    <div class="bg-white md:hidden fixed bottom-0 left-0 w-full p-3 shadow z-[50]">
       <div class="container-admin">
         <div class="flex gap-4 items-center justify-between">
-          <p>
+          <p class="leading-[18px]">
             <a
-              href="#"
-              class="text-primary text-sm sm:text-base hover:text-danger border-b border-b-primary_20 group hover:border-light_red"
+              href="terms-of-cooperation.html"
+              class="text-primary text-sm hover:text-danger border-b border-b-primary_20 hover:border-b-light_red leading-[18px]"
               >Условия сотрудничества</a
             >
           </p>
           <button
             type="button"
-            class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] text-sm sm:text-base min-w-[175px]"
+            class="open-popup text-white py-3 md:py-[14px] px-6 md:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary leading-[18px] md:leading-[20px] text-sm md:text-base min-w-[175px]"
             data-open-popup="popup-send-client"
           >
             Передать клиента
@@ -406,7 +409,7 @@
             </button>
           </div>
           <div
-            class="flex py-2 sm:py-3 px-3 sm:px-4 gap-2 text-sm sm:text-base sm:gap-2.5 bg-light_blue rounded text-primary mb-4 sm:mb-6 leading-[24px] sm:leading-[30px]"
+            class="flex py-[11px] sm:py-4 pr-3 sm:pr-4 pl-[44px] sm:pl-[54px] bg-light_blue rounded text-primary relative mb-4 sm:mb-6"
           >
             <svg
               width="24"
@@ -414,7 +417,7 @@
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="flex-none w-6 h-6 sm:w-7 sm:h-7"
+              class="absolute top-2.5 sm:top-3.5 left-4 w-5 h-5 sm:w-6 sm:h-6"
             >
               <path
                 fill-rule="evenodd"
@@ -423,7 +426,9 @@
                 fill="#013FEC"
               />
             </svg>
-            Работаем только с офисами. Не сможем взять в работу клиентов из других сегментов.
+            <p class="text-sm sm:text-base leading-[18px] sm:leading-[20px]">
+              Работаем только с офисами. Не сможем взять в работу клиентов из других сегментов.
+            </p>
           </div>
           <form method="post" id="send-client-form">
             <div class="flex flex-col md:flex-row gap-2.5 md:gap-3 flex-wrap mb-2.5 md:mb-3">
@@ -432,7 +437,7 @@
                   class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent h-[54px] md:h-14"
                 >
                   <label for="username" class="text-xs text-text_grey">Имя</label>
-                  <input type="text" class="bg-transparent" name="username" id="username" />
+                  <input type="text" class="bg-transparent text-sm md:text-base" name="username" id="username" />
                 </fieldset>
                 <p class="error-text hidden text-danger text-sm"></p>
               </div>
@@ -480,7 +485,7 @@
               <p class="text-xs text-text_grey mb-1">Город</p>
               <div class="flex flex-col sm:flex-row gap-2">
                 <label
-                  class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center sm:w-[calc(50%_-_4px)] cursor-pointer gap-3"
+                  class="py-[14px] px-3 md:px-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center sm:w-[calc(50%_-_4px)] cursor-pointer gap-3"
                 >
                   <input type="radio" name="city" class="radio-input hidden peer/moskow" checked />
                   <span class="text-sm sm:text-base">Москва</span>
@@ -508,7 +513,7 @@
                   </svg>
                 </label>
                 <label
-                  class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center sm:w-[calc(50%_-_4px)] cursor-pointer gap-3"
+                  class="py-[14px] px-3 md:px-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center sm:w-[calc(50%_-_4px)] cursor-pointer gap-3"
                 >
                   <span class="text-sm sm:text-base">Санкт-Петербург</span>
                   <input type="radio" name="city" class="radio-input hidden peer/sankt-peterburg" />
@@ -542,7 +547,7 @@
               <div class="flex flex-col sm:flex-row gap-2">
                 <div class="sm:w-[calc(50%_-_4px)]">
                   <label
-                    class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive peer"
+                    class="py-[14px] px-3 md:px-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive peer"
                   >
                     <input
                       id="money-reward"
@@ -580,7 +585,7 @@
                 </div>
                 <div class="sm:w-[calc(50%_-_4px)]">
                   <label
-                    class="p-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive peer"
+                    class="py-[14px] px-3 md:px-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive peer"
                   >
                     <span class="text-sm sm:text-base peer-disabled:text-text_grey"
                       >20% от суммы сделки, после заключения договора</span
@@ -620,16 +625,15 @@
             </div>
             <div class="mb-4 md:mb-6">
               <label class="text-xs text-text_grey">Комментарий</label>
-              <input
-                type="text"
-                class="py-2 px-3 md:px-4 border border-line_blue rounded-xs md:rounded placeholder:text-placeholder_text w-full focus:placeholder:text-placeholder_text"
+              <textarea
+                class="py-3 px-3 md:px-4 border border-line_blue rounded-xs md:rounded placeholder:text-placeholder_text w-full focus:placeholder:text-placeholder_text md:h-[52px]"
                 placeholder="Район города, доп. информация о клиенте"
-              />
+              ></textarea>
             </div>
             <div>
               <button
                 type="submit"
-                class="text-white py-[12px] lg:py-3.5 px-6 lg:px-8 bg-primary rounded-xs md:rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full text-sm sm:text-base"
+                class="text-white py-3 md:py-[14px] px-6 md:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary leading-[18px] md:leading-[20px] w-full text-sm md:text-base"
               >
                 Передать контакт
               </button>
@@ -693,7 +697,7 @@
               </p>
               <button
                 type="button"
-                class="open-popup text-white py-3 lg:py-3.5 px-4 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary lg:leading-[28px] w-full xs:w-fit text-sm sm:text-base"
+                class="open-popup text-white py-3 md:py-[14px] px-6 md:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary leading-[18px] md:leading-[20px] text-sm md:text-base w-full xs:w-fit"
               >
                 Передать клиента
               </button>

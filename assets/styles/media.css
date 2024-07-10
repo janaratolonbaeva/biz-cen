@@ -36,6 +36,31 @@
   }
 }
 
+@media screen and (max-width: 639px) {
+  input, textarea {
+    font-size: 14px;
+  }
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+  }
+  input::-moz-placeholder, textarea::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+  }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+  }
+  input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .admin-body {
+    margin-bottom: 70px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .menu {
     height: 100vh;

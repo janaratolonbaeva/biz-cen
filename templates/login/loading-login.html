@@ -13,14 +13,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../../assets/js/tailwind.config.js"></script>
   </head>
-  <body>
+  <body class="admin-body">
     <main class="p-3 md:p-6 2lg:min-h-[100vh] 2lg:flex 2lg:items-center">
       <div class="container-admin">
         <div class="flex flex-col 2lg:flex-row-reverse 2lg:justify-between gap-4 2lg:gap-6 w-full">
           <div
             class="bg-white px-4 py-4 md:px-8 xl:px-20 md:py-8 rounded-sm md:rounded-md basis-full md:basis-1/2 min-h-[400px]"
           >
-            <div class="mb-11 md:mb-11 flex-none 2lg:hidden">
+            <div class="mb-11 flex-none 2lg:hidden">
               <a href="/"
                 ><img
                   class="w-[89px] h-[20px] md:w-[130px] md:h-[29px]"
@@ -114,8 +114,8 @@
               </svg>
             </div>
           </div>
-          <div class="bg-white p-4 md:p-8 rounded-sm md:rounded-md basis-full md:basis-1/2">
-            <div class="mb-11 md:mb-11 flex-none hidden 2lg:block">
+          <div class="bg-white p-4 md:p-8 rounded-sm md:rounded-md basis-full md:basis-1/2 flex flex-col h-auto">
+            <div class="mb-11 flex-none hidden 2lg:block">
               <a href="/"
                 ><img
                   class="w-[89px] h-[20px] md:w-[130px] md:h-[29px]"
@@ -126,11 +126,13 @@
               /></a>
             </div>
             <h2 class="text-lg md:text-xl font-bold mb-6 md:mb-8 max-w-[600px]">
-              Партнёрская программа Biz-cen: <br />
-              зарабатывайте даже на тех клиентах, которые не снимают у вас офис
+              <a href="/" class="hover:text-danger">
+                Партнёрская программа Biz-cen: <br />
+                зарабатывайте даже на тех клиентах, которые не снимают у вас офис
+              </a>
             </h2>
             <div
-              class="bg-light_blue mb-4 md:mb-6 rounded-sm max-w-[600px] overflow-hidden pt-10 xs:pt-14 sm:pt-0 flex justify-center items-end sm:justify-start sm:items-start"
+              class="bg-light_blue mb-4 md:mb-6 rounded-sm max-w-[600px] lg:max-w-full overflow-hidden pt-10 xs:pt-14 sm:pt-0 flex justify-center items-end sm:justify-start sm:items-start"
             >
               <img
                 src="../../assets/images/login-macbook-image.png"
@@ -148,11 +150,19 @@
               />
             </div>
             <div class="flex gap-6">
-              <p class="border-b border-b-primary_20 group hover:border-b-light_red">
-                <a href="#" class="text-primary text-sm sm:text-base group-hover:text-danger">Условия сотрудничества</a>
+              <p>
+                <a
+                  href="terms-of-cooperation.html"
+                  class="text-primary text-sm sm:text-base hover:text-danger border-b border-b-primary_20 group hover:border-b-light_red leading-[22px]"
+                  >Условия сотрудничества</a
+                >
               </p>
-              <p class="border-b border-b-primary_20 group hover:border-b-light_red">
-                <a href="#" class="text-primary text-sm sm:text-base group-hover:text-danger">Оферта</a>
+              <p>
+                <a
+                  href="offer.html"
+                  class="text-primary text-sm sm:text-base hover:text-danger border-b border-b-primary_20 group hover:border-b-light_red leading-[22px]"
+                  >Оферта</a
+                >
               </p>
             </div>
           </div>
