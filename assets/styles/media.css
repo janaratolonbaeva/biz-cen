@@ -20,6 +20,21 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .tui-pagination .tui-page-btn:not(.tui-next, .tui-prev, .tui-first, .tui-last) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .tui-pagination .tui-prev {
+    margin-right: 6px;
+  }
+
+  .tui-pagination .tui-next {
+    margin-left: 6px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   body {
     font-size: 18px;

@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/addons/cleave-phone.ru.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../../assets/js/tailwind.config.js"></script>
+    <script src="../../assets/js/admin/tailwind.config.js"></script>
   </head>
   <body class="admin-body">
     <div class="bg-white p-3 md:px-8 md:py-4">
@@ -439,7 +439,7 @@
                   <label for="username" class="text-xs text-text_grey">Имя</label>
                   <input type="text" class="bg-transparent text-sm md:text-base" name="username" id="username" />
                 </fieldset>
-                <p class="error-text hidden text-danger text-sm"></p>
+                <p class="error-text text-xs md:text-sm hidden text-danger text-sm"></p>
               </div>
               <div id="phone-block" class="input-block md:w-[calc(50%_-_6px)]">
                 <fieldset
@@ -448,7 +448,7 @@
                   <label for="phone" class="text-xs text-text_grey after:content-['*']">Телефон</label>
                   <input type="tel" class="bg-transparent require-input" name="phone" id="phone" />
                 </fieldset>
-                <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+                <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Некорректный ввод</p>
               </div>
               <div id="footage-block" class="input-block md:w-[calc(50%_-_6px)]">
                 <fieldset
@@ -464,7 +464,7 @@
                     placeholder="Площадь, м²"
                   />
                 </fieldset>
-                <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+                <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Некорректный ввод</p>
               </div>
               <div id="budget-block" class="input-block md:w-[calc(50%_-_6px)]">
                 <fieldset
@@ -478,7 +478,7 @@
                     placeholder="Сумма, ₽ "
                   />
                 </fieldset>
-                <p class="error-text hidden text-danger text-sm"></p>
+                <p class="error-text text-xs md:text-sm hidden text-danger text-sm"></p>
               </div>
             </div>
             <div class="mb-2.5 md:mb-3">

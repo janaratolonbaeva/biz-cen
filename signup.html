@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/addons/cleave-phone.ru.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
+    <script src="assets/js/admin/tailwind.config.js"></script>
   </head>
   <body class="admin-body">
     <main class="p-3 md:p-6 2lg:min-h-[100vh] 2lg:flex 2lg:items-center">
@@ -48,7 +48,7 @@
                       id="email"
                     />
                   </fieldset>
-                  <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+                  <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Некорректный ввод</p>
                 </div>
                 <div id="password-block" class="input-block mb-2 md:mb-3">
                   <fieldset
@@ -68,7 +68,7 @@
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="eye-close"
+                        class="eye-close w-5 h-5 md:w-6 md:h-6"
                       >
                         <path
                           fill-rule="evenodd"
@@ -83,18 +83,18 @@
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="eye-open hidden mt-[-2.5px]"
+                        class="eye-open hidden mt-[-2.5px] w-5 h-5 md:w-6 md:h-6"
                       >
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
                           d="M12.75 2.75C12.75 2.33579 12.4142 2 12 2C11.5858 2 11.25 2.33579 11.25 2.75V4.75C11.25 5.16421 11.5858 5.5 12 5.5C12.4142 5.5 12.75 5.16421 12.75 4.75V2.75ZM3.53033 5.21967C3.23744 4.92678 2.76256 4.92678 2.46967 5.21967C2.17678 5.51256 2.17678 5.98744 2.46967 6.28033L3.96967 7.78033C4.26256 8.07322 4.73744 8.07322 5.03033 7.78033C5.32322 7.48744 5.32322 7.01256 5.03033 6.71967L3.53033 5.21967ZM21.5303 6.28033C21.8232 5.98744 21.8232 5.51256 21.5303 5.21967C21.2374 4.92678 20.7626 4.92678 20.4697 5.21967L18.9697 6.71967C18.6768 7.01256 18.6768 7.48744 18.9697 7.78033C19.2626 8.07322 19.7374 8.07322 20.0303 7.78033L21.5303 6.28033ZM20.8772 12.3211C22.3743 13.7542 22.3743 16.2458 20.8772 17.6789C18.8134 19.6545 15.6042 22 12 22C8.3958 22 5.18661 19.6545 3.12281 17.6789C1.62573 16.2458 1.62573 13.7542 3.12281 12.3211C5.18661 10.3455 8.3958 8 12 8C15.6042 8 18.8134 10.3455 20.8772 12.3211ZM15 15C15 16.6569 13.6568 18 12 18C10.3431 18 8.99997 16.6569 8.99997 15C8.99997 13.3431 10.3431 12 12 12C13.6568 12 15 13.3431 15 15Z"
-                          fill="black"
+                          fill="#6E789C"
                         />
                       </svg>
                     </button>
                   </fieldset>
-                  <p class="error-text hidden text-danger text-sm"></p>
+                  <p class="error-text text-xs md:text-sm hidden text-danger text-sm"></p>
                 </div>
                 <div class="mb-2 md:mb-3">
                   <p class="text-xs text-text_grey mb-1">Город</p>
@@ -164,7 +164,7 @@
                     <label for="phone" class="text-xs text-text_grey">Телефон для связи</label>
                     <input type="tel" class="bg-transparent text-sm md:text-base" name="phone" id="phone" />
                   </fieldset>
-                  <p class="error-text hidden text-danger text-sm">Некорректный ввод</p>
+                  <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Некорректный ввод</p>
                 </div>
                 <div id="username-block" class="input-block mb-4 md:mb-6">
                   <fieldset
@@ -173,7 +173,7 @@
                     <label for="username" class="text-xs text-text_grey">Имя</label>
                     <input type="text" class="bg-transparent text-sm md:text-base" name="username" id="username" />
                   </fieldset>
-                  <p class="error-text hidden text-danger text-sm"></p>
+                  <p class="error-text text-xs md:text-sm hidden text-danger text-sm"></p>
                 </div>
                 <div class="mb-8 md:mb-11">
                   <button
@@ -232,7 +232,7 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>Telegram</span>
+                  <span class="text-sm md:text-base">Telegram</span>
                 </a>
                 <a
                   href="#"
@@ -275,7 +275,7 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>WhatsApp</span>
+                  <span class="text-sm md:text-base">WhatsApp</span>
                 </a>
               </div>
             </div>
@@ -291,11 +291,11 @@
                   alt="Biz cen logo"
               /></a>
             </div>
-            <h2 class="text-lg md:text-xl font-bold mb-6 md:mb-8 flex-none max-w-[600px]">
-              <a href="/" class="hover:text-danger">
-                Партнёрская программа Biz-cen: <br />
-                зарабатывайте даже на&nbsp;тех клиентах, которые не&nbsp;снимают у&nbsp;вас офис
-              </a>
+            <h2 class="text-lg md:text-xl font-bold mb-6 md:mb-8 max-w-[600px]">
+              <a href="/" class="border-b border-b-dark_20 hover:text-danger hover:border-b-light_red">
+                Партнёрская программа Biz-cen: </a
+              ><br />
+              зарабатывайте даже на тех клиентах, которые не снимают у вас офис
             </h2>
             <div class="grow">
               <div class="bg-light_blue p-4 md:p-6 mb-2 md:mb-4 rounded-sm">
