@@ -9,3 +9,6 @@
 7. <a href="https://janaratolonbaeva.github.io/biz-cen/profile" target="_blank">profile</a>
 8. <a href="https://janaratolonbaeva.github.io/biz-cen/password-recovery" target="_blank">password-recovery</a>
 
+Комментарии:
+- Для админ панели использован отдельный ```tailwind.config.js```, </br>который находится в папке ```assets/js/admin/tailwind.config.js```
+
