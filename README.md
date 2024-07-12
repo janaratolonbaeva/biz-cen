@@ -10,6 +10,8 @@
 8. <a href="https://janaratolonbaeva.github.io/biz-cen/password-recovery" target="_blank">password recovery</a>
 9. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-cooperation" target="_blank">terms of cooperation</a>
 10. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-cooperation-no-entry" target="_blank">terms of cooperation no entry</a>
+11. <a href="https://janaratolonbaeva.github.io/biz-cen/offer" target="_blank">terms of use</a>
+
 
 Комментарии:
 - Для админ панели использован отдельный ```tailwind.config.js```, </br>который находится в папке ```assets/js/admin/tailwind.config.js```
