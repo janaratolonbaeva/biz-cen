@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('form');
   const btnEye = document.querySelectorAll('.btn-eye');
+  const passwordInputs = document.querySelectorAll('input[type="email"]');
 
   btnEye.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -20,6 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  passwordInputs.forEach((input) => {
+    const inputBlock = input.closest('.input-block');
+
+    input.addEventListener('blur', (e) => {
+      if (input.value !== '' && !input.checkValidity()) {
+        if (inputBlock) addStyleInputInvalid(inputBlock, 'Некорректный ввод');
+      }
+    });
+  });
+
   forms.forEach((form) => {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -28,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inputs.forEach((input) => {
         if (input.value === '') {
           const inputBlock = input.closest('.input-block');
-          addStyleInputEmpty(inputBlock);
+          addStyleInputInvalid(inputBlock, 'Обязательно поле');
 
           return;
         }
@@ -37,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function addStyleInputEmpty(input) {
+function addStyleInputInvalid(input, text) {
   input.querySelector('fieldset').classList.add('border-danger', 'bg-white');
-  input.querySelector('.error-text').textContent = 'Обязательно поле';
+  input.querySelector('.error-text').textContent = text;
   input.querySelector('.error-text').classList.remove('hidden');
 }

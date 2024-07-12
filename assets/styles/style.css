@@ -62,7 +62,7 @@ body {
 
 .container-admin {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1352px;
   margin: 0 auto;
 }
 
@@ -166,7 +166,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 input:focus:-moz-placeholder,
-textarea:focus:-moz-placeholde {
+textarea:focus:-moz-placeholder {
   color: var(--main-blue);
 }
 
@@ -341,8 +341,8 @@ textarea:focus:-moz-placeholde {
   color: #6e789c;
 }
 
-.table-content tr td:last-child {
-  margin-bottom: 12px;
+.table-content tr:not(:last-child) td:last-child {
+  margin-bottom: 6px;
 }
 
 .fade {
@@ -500,4 +500,10 @@ textarea:focus:-moz-placeholde {
 
 .open-dropdown.active .arrow {
   transform: rotateX(180deg);
+}
+
+.grid-area-3-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

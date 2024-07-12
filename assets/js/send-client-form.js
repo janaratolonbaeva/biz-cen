@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const openPopups = document.querySelectorAll('.open-popup');
   const closePopups = document.querySelectorAll('.close-popup');
   const modals = document.querySelectorAll('.modal');
+  const main = document.querySelector('.main');
 
   openPopups.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         popup.classList.add('show');
         document.body.style.overflow = 'hidden';
+        main.classList.add('blur-[2px]');
       }, 10);
     });
   });
@@ -23,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const popup = closePopup.closest('.modal');
       popup.classList.remove('show');
       document.body.style.overflow = '';
+      main.classList.remove('blur-[2px]');
 
       setTimeout(() => {
         popup.style.display = 'none';
@@ -35,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.target === modal) {
         modal.classList.remove('show');
         document.body.style.overflow = '';
+        main.classList.remove('blur-[2px]');
 
         setTimeout(() => {
           modal.style.display = 'none';
@@ -154,15 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       dropdown.closest('.dropdown').querySelector('.open-dropdown').classList.remove('active');
-    });
-  });
-
-  // event focus on all inputs
-  const allInputs = document.querySelectorAll('input');
-
-  allInputs.forEach((input) => {
-    input.addEventListener('focus', () => {
-      input.setAttribute('placeholder', '');
     });
   });
 });
