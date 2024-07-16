@@ -10,7 +10,11 @@
 8. <a href="https://janaratolonbaeva.github.io/biz-cen/password-recovery" target="_blank">password recovery</a>
 9. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-cooperation" target="_blank">terms of cooperation</a>
 10. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-cooperation-no-entry" target="_blank">terms of cooperation no entry</a>
-11. <a href="https://janaratolonbaeva.github.io/biz-cen/offer" target="_blank">terms of use</a>
+11. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-use" target="_blank">terms of use</a>
+12. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-cooperation" target="_blank">terms of cooperation</a>
+13. <a href="https://janaratolonbaeva.github.io/biz-cen/privacy-policy" target="_blank">privacy policy</a>
+14. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-cooperation-no-entry" target="_blank">terms of cooperation no entry</a>
+15. <a href="https://janaratolonbaeva.github.io/biz-cen/partner" target="_blank">partner</a>
 
 
 Комментарии:
