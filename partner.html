@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biz-cen.ru | Партнеры</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/media.css" />
+  </head>
+  <body>
+    <div class="p-3 md:p-6">
+      <header
+        id="header"
+        class="header sticky top-0 left-0 bg-white p-4 2lg:px-8 2lg:py-4 max-h-[88px] rounded rounded-md mb-3 md:mb-6"
+      >
+        <div class="container">
+          <div class="flex justify-between items-center gap-6">
+            <a href="/" class="flex-none relative z-50">
+              <img
+                class="w-[113px] h-[26px] md:w-[130px] h-[29px]"
+                src="assets/images/logo.svg"
+                width="130"
+                height="29"
+                alt="Biz cen logo"
+              />
+            </a>
+            <div id="menu" class="menu flex flex-col lg:flex-row p-3 lg:p-0 bg-light_grey lg:bg-transparent">
+              <div class="overflow-y-scroll p-4 lg:py-0 pt-16 md:px-8 md:pt-24 rounded-sm bg-white h-full w-full">
+                <ul class="flex flex-col lg:flex-row lg:justify-center gap-4 lg:gap-8 mb-16 lg:mb-0">
+                  <li><a href="#whom" class="hover:text-danger py-4 lg:p-0">Для кого</a></li>
+                  <li><a href="#price" class="hover:text-danger py-4 lg:p-0">Оплата</a></li>
+                  <li><a href="#how-to-connect" class="hover:text-danger py-4 lg:p-0">Как подключиться</a></li>
+                  <li><a href="#popular-questions" class="hover:text-danger py-4 lg:p-0">Популярные вопросы</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex items-center gap-8 lg:gap-10">
+              <a
+                href="signup.html"
+                class="xl:inline-block btn-gradient text-white xl:py-[13px] xl:px-6 xl:px-8 xl:py-3.5 flex-none w-8 h-8 xl:w-auto xl:h-auto rounded-full xl:rounded flex justify-center items-center xl:leading-[28px]"
+              >
+                <span class="hidden xl:inline">Зарегистрироваться</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  class="xl:hidden"
+                >
+                  <rect width="32" height="32" rx="16" fill="url(#paint0_linear_1550_8179)" />
+                  <path
+                    d="M13.375 17.0798C10.9588 17.0798 9 19.1691 9 21.7464C9 23.2928 10.1753 24.5464 11.625 24.5464H20.375C21.8247 24.5464 23 23.2928 23 21.7464C23 19.1691 21.0412 17.0798 18.625 17.0798H13.375Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M16 6.99995C13.6805 6.99995 11.8 8.88035 11.8 11.2C11.8 13.5195 13.6805 15.4 16 15.4C18.3196 15.4 20.2 13.5195 20.2 11.2C20.2 8.88035 18.3196 6.99995 16 6.99995Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1550_8179"
+                      x1="0.55"
+                      y1="1.21482"
+                      x2="36.9667"
+                      y2="12.187"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF8F2E" />
+                      <stop offset="0.18" stop-color="#FC7059" />
+                      <stop offset="0.3" stop-color="#FD6279" />
+                      <stop offset="0.425" stop-color="#E9659D" />
+                      <stop offset="0.565" stop-color="#D669B5" />
+                      <stop offset="0.715" stop-color="#9C6BD2" />
+                      <stop offset="0.855" stop-color="#8966D3" />
+                      <stop offset="1" stop-color="#5E57D0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <button
+                type="button"
+                class="btn-burger flex lg:hidden gap-1.5 flex-col items-end w-5 h-5 justify-center relative z-50"
+              >
+                <span class="bg-dark h-[2px] w-6 rounded block"></span>
+                <span class="bg-dark h-[2px] w-4 rounded block"></span>
+                <span class="bg-dark h-[2px] w-6 rounded block"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="bg-white px-4 pt-11 pb-4 2lg:px-8 2lg:pt-[60px] 2lg:pb-8 rounded rounded-md mb-16 md:mb-[100px]">
+        <div class="container">
+          <h1 class="text-xxl md:text-2xl mb-11 md:mb-[60px] font-bold max-w-[956px] mx-auto text-center">
+            Партнёрская программа Биз-цен: зарабатывайте даже на&nbsp;тех клиентах, которые не&nbsp;снимают у&nbsp;вас
+            офис
+          </h1>
+          <div class="flex flex-col lg:flex-row gap-3 md:gap-6 justify-between">
+            <div
+              class="w-full lg:w-[calc(50%_-_12px)] bg-light_blue rounded-sm md:rounded h-auto pt-8 md:pt-10 px-4 md:px-6"
+            >
+              <p class="text-lg md:text-xl mb-8 md:mb-10">
+                Помогаем брокерам, агенствам и&nbsp;представителям бизнес-центров создать новый источник прибыли
+              </p>
+              <img
+                src="assets/images/partner-mobile.png"
+                class="block mx-auto max-w-full"
+                width="292"
+                height="596"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-full lg:w-[calc(50%_-_12px)] bg-light_blue rounded-sm md:rounded h-auto py-8 md:py-10 px-4 md:px-6 flex flex-col"
+            >
+              <p class="text-lg md:text-xl mb-[82px] lg:mb-10 grow">
+                Вы&nbsp;передаёте нам клиентов, с&nbsp;которыми не&nbsp;работаете&nbsp;&mdash; мы&nbsp;платим
+                вам&nbsp;20% от&nbsp;сделки или вознаграждение за&nbsp;каждый переданный контакт
+              </p>
+              <p class="flex-none leading-[22px] md:leading-[24px]">
+                *Оплачиваем только целевых клиентов и&nbsp;тех, кто не&nbsp;обращался к&nbsp;нам в&nbsp;течение 3-х
+                месяцев до&nbsp;передачи контакта
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="bg-white px-4 pt-11 pb-4 2lg:px-8 2lg:pt-[60px] 2lg:pb-8 rounded rounded-md mb-16 md:mb-[100px]">
+        <div class="container">
+          <h2 class="text-xxl md:text-2xl mb-11 md:mb-[60px] font-bold max-w-[956px] mx-auto text-center">
+            Кто может зарабатывать на&nbsp;партнёрской программе
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-3 md:gap-6 justify-between">
+            <div
+              class="flex flex-col bg-white border-[2px] border-line_blue py-6 px-4 md:py-10 md:px-6 lg:w-[calc(50%_-_6px)] rounded md:rounded-sm h-auto"
+            >
+              <div
+                class="w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center mb-8 md:mb-10 bg-light_blue"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  class="w-[36px] h-[36px] md:w-[60px] md:h-[60px]"
+                >
+                  <path
+                    opacity="0.4"
+                    d="M12.5 20C8.35 20 5 23.35 5 27.5V47.5C5 51.65 8.35 55 12.5 55H16.25C19 55 21.25 52.75 21.25 50V25C21.25 22.25 19 20 16.25 20H12.5ZM15 42.5C15 43.525 14.15 44.375 13.125 44.375C12.1 44.375 11.25 43.525 11.25 42.5V32.5C11.25 31.475 12.1 30.625 13.125 30.625C14.15 30.625 15 31.475 15 32.5V42.5Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    d="M47.5 5H32.5C28.35 5 25 8.35 25 12.5V47.5C25 51.65 28.35 55 32.5 55H33.75C34.45 55 35 54.45 35 53.75V45C35 43.625 36.125 42.5 37.5 42.5H42.5C43.875 42.5 45 43.625 45 45V53.75C45 54.45 45.55 55 46.25 55H47.5C51.65 55 55 51.65 55 47.5V12.5C55 8.35 51.65 5 47.5 5ZM36.875 32.5C36.875 33.525 36.025 34.375 35 34.375C33.975 34.375 33.125 33.525 33.125 32.5V20C33.125 18.975 33.975 18.125 35 18.125C36.025 18.125 36.875 18.975 36.875 20V32.5ZM46.875 32.5C46.875 33.525 46.025 34.375 45 34.375C43.975 34.375 43.125 33.525 43.125 32.5V20C43.125 18.975 43.975 18.125 45 18.125C46.025 18.125 46.875 18.975 46.875 20V32.5Z"
+                    fill="#013FEC"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Брокеры и&nbsp;агенства</h3>
+              <p class="leading-[18px] md:leading-[24px] md:text-md">
+                Вы&nbsp;работаете с&nbsp;большими помещениями или торговой недвижимостью, а&nbsp;к&nbsp;вам обращаются
+                нецелевые клиенты? Мы&nbsp;подберём подходящий офис, а&nbsp;вам выплатим вознаграждение.
+              </p>
+            </div>
+            <div
+              class="flex flex-col bg-white border-[2px] border-line_blue py-6 px-4 md:py-10 md:px-6 lg:w-[calc(50%_-_6px)] rounded md:rounded-sm h-auto"
+            >
+              <div
+                class="w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center mb-8 md:mb-10 bg-light_blue"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="50" viewBox="0 0 54 50" fill="none">
+                  <path
+                    opacity="0.4"
+                    d="M12.2591 28.6444C5.48858 28.6444 0 34.4989 0 41.7208C0 46.0539 3.29315 49.5666 7.35546 49.5666H31.8736C35.9359 49.5666 39.2291 46.0539 39.2291 41.7208C39.2291 34.4989 33.7405 28.6444 26.97 28.6444H12.2591Z"
+                    fill="#013FEC"
+                  />
+                  <path
+                    d="M19.6134 0.400024C13.1137 0.400024 7.8447 5.66906 7.8447 12.1688C7.8447 18.6684 13.1137 23.9375 19.6134 23.9375C26.1131 23.9375 31.3822 18.6684 31.3822 12.1688C31.3822 5.66906 26.1131 0.400024 19.6134 0.400024Z"
+                    fill="#013FEC"
+                  />
+                  <rect x="31" y="32.4" width="19" height="11" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M38.6 24.4H41.4C48.3588 24.4 54 30.0412 54 37C54 43.9588 48.3588 49.6 41.4 49.6H31.6C28.5072 49.6 26 47.0928 26 44V37C26 30.0412 31.6412 24.4 38.6 24.4ZM34.4 40.85C33.8201 40.85 33.35 40.3799 33.35 39.8C33.35 39.2201 33.8201 38.75 34.4 38.75H40C40.5799 38.75 41.05 39.2201 41.05 39.8C41.05 40.3799 40.5799 40.85 40 40.85H34.4ZM34.4 35.25C33.8201 35.25 33.35 34.7799 33.35 34.2C33.35 33.6201 33.8201 33.15 34.4 33.15H45.6C46.1799 33.15 46.65 33.6201 46.65 34.2C46.65 34.7799 46.1799 35.25 45.6 35.25H34.4Z"
+                    fill="#013FEC"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Представители бизнес-центров</h3>
+              <p class="leading-[18px] md:leading-[24px] text-sm md:text-md">
+                К&nbsp;вам приходят за&nbsp;офисами определённого метража, а&nbsp;их&nbsp;нет в&nbsp;наличии?
+                Передавайте контакты таких клиентов нам, чтобы зарабатывать даже на&nbsp;тех, кто просто уходит
+                от&nbsp;вас.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white px-4 pt-11 pb-4 2lg:px-8 2lg:pt-16 2lg:pb-8 rounded rounded-md mb-16 md:mb-[100px]">
+        <div class="container">
+          <h2 class="text-xxl md:text-2xl mb-11 md:mb-[60px] font-bold max-w-[956px] mx-auto text-center">
+            Что вы&nbsp;получите от&nbsp;нашего сотрудничества
+          </h2>
+          <div
+            class="flex flex-col 2lg:flex-row 2lg:flex-wrap 2lg:flex-nowrap justify-center 2lg:justify-between gap-3 lg:gap-6 mb-11 md:mb-[60px]"
+          >
+            <div
+              class="flex flex-col bg-light_blue py-6 px-4 md:py-10 md:px-6 2lg:w-[calc(50%_-_6px)] rounded md:rounded-sm md:gap-10 h-auto"
+            >
+              <h4 class="text-lg md:text-xl font-bold flex-none mb-4 md:mb-0">Оплата за&nbsp;переданный контакт</h4>
+              <ul class="grow mb-8 md:mb-0">
+                <li class="gap-2 flex text-sm md:text-md leading-[18px] md:leading-[24px]">
+                  <svg
+                    class="flex-none mt-[7px]"
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.38118L6.33333 10.9526L17 1.04785"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                  Гарантированное вознаграждение, которое вы&nbsp;получите сразу как мы&nbsp;подтвердим
+                  контакт&nbsp;&mdash; независимо от&nbsp;того, закроется потом сделка или нет.
+                </li>
+              </ul>
+              <div class="flex-none">
+                <div
+                  class="flex flex-col xs:flex-row xs:justify-between border-b border-b-line_blue xs:items-end pb-1 sm:pb-2 mb-3"
+                >
+                  <span class="font-bold text-base md:text-lg leading-5 md:leading-6 inline-block mb-1 mb-0"
+                    >Cделка до 100 м²
+                  </span>
+                  <span class="font-bold text-xxl md:text-2xl leading-[30px] md:leading-[54px] inline-block"
+                    >800 ₽
+                  </span>
+                </div>
+                <div
+                  class="flex flex-col xs:flex-row xs:justify-between border-b border-b-line_blue xs:items-end pb-1 sm:pb-2"
+                >
+                  <span class="font-bold text-base md:text-lg leading-5 md:leading-6 inline-block mb-1 mb-0"
+                    >Сделка более 100 м²
+                  </span>
+                  <span class="font-bold text-xxl md:text-2xl leading-[30px] md:leading-[54px] inline-block"
+                    >3 000 ₽
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gradient py-6 px-4 md:py-10 md:px-6 2lg:w-[calc(50%_-_6px)] rounded md:rounded-sm text-white h-auto"
+            >
+              <h4 class="text-lg md:text-xl font-bold flex-none mb-4 md:mb-0">Или оплата за&nbsp;сделку</h4>
+              <ul class="grow mb-8 md:mb-0">
+                <li class="gap-2 flex text-sm md:text-md">
+                  <svg
+                    class="flex-none mt-[7px]"
+                    width="18"
+                    height="13"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.38118L6.33333 10.9526L17 1.04785"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                  <div>
+                    <p class="mb-3 text-sm md:text-md leading-[18px] md:leading-[24px]">
+                      Нужно дождаться, пока мы&nbsp;закроем сделку и&nbsp;получим оплату
+                      от&nbsp;бизнес-центра&nbsp;&mdash; зато вознаграждение будет более существенным.
+                    </p>
+                    <p class="text-sm md:text-md leading-[18px] md:leading-[24px]">
+                      Работаем по&nbsp;данному типу вознаграждения только по&nbsp;клиентам, которые ищут помещение
+                      дороже 100&nbsp;000&nbsp;₽.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="flex-none">
+                <div
+                  class="flex flex-col xs:flex-row xs:justify-between border-b border-b-white/30 xs:items-end pb-1 sm:pb-2"
+                >
+                  <span class="font-bold text-base md:text-lg leading-5 md:leading-6 inline-block mb-1 mb-0"
+                    >Cделка от 100 000 ₽
+                  </span>
+                  <div>
+                    <p class="font-bold text-xxl md:text-2xl leading-[30px] md:leading-[54px] inline-block mb-[2px]">
+                      20%
+                    </p>
+                    <p class="text-mini md:text-sm">от суммы вознаграждения</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between items-stretch">
+            <div
+              class="lg:w-[calc(50%_-_6px)] rounded md:rounded-sm bg-primary flex items-end overflow-hidden h-auto relative justify-end mb-3 md:mb-6 lg:mb-0"
+            >
+              <img
+                src="assets/images/login-macbook-image.png"
+                class="max-w-full lg:absolute 2lg:bottom-0 2lg:right-0 2lg:h-full 2lg:w-auto"
+                width="637"
+                height="650"
+                alt=""
+              />
+            </div>
+            <div class="lg:w-[calc(50%_-_6px)]">
+              <div class="bg-light_blue py-6 px-4 md:py-10 md:px-6 rounded md:rounded-sm md:gap-10 mb-3 md:mb-6">
+                <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Прозрачность</h3>
+                <p class="leading-[18px] md:leading-[24px] text-sm md:text-md">
+                  В&nbsp;личном кабинете вы&nbsp;сможете отслеживать статус переданной сделки и&nbsp;видеть, какой
+                  процент выплачивает бизнес-центр. Также у&nbsp;вас будут контакты ответственного менеджера, который
+                  в&nbsp;любое время ответит на ваши вопросы.
+                </p>
+              </div>
+              <div class="bg-light_blue py-6 px-4 md:py-10 md:px-6 rounded md:rounded-sm">
+                <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Законность</h3>
+                <p class="leading-[18px] md:leading-[24px] text-sm md:text-md">
+                  Мы&nbsp;работаем в&nbsp;рамках закона. Согласно
+                  <a
+                    href="terms-of-use.html"
+                    class="text-primary inline-block border-b border-b-primary_20 hover:text-danger hover:border-b-danger_20 focus:text-danger focus:border-b-danger_20 w-fit leading-[16px] md:leading-[18px]"
+                    >оферте</a
+                  >, мы&nbsp;передаём все данные бизнес-центрам для&nbsp;оказания консультаций.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white px-4 py-11 2lg:px-8 2lg:py-[60px] rounded rounded-md mb-16 md:mb-[100px]">
+        <div class="container">
+          <h2 class="text-xxl md:text-2xl mb-11 md:mb-[60px] font-bold max-w-[956px] mx-auto text-center">
+            Как подключиться к&nbsp;партнёрской программе Биз-цен
+          </h2>
+          <div class="flex flex-wrap gap-3 md:gap-6 sm:justify-between">
+            <div class="w-full sm:w-[calc(50%_-_6px)] md:w-[calc(50%_-_12px)] mb-10 md:mb-12">
+              <div
+                class="bg-light_blue rounded md:rounded-sm pt-8 px-[26px] lg:px-[90px] flex justify-center items-end mb-3 md:mb-4"
+                style="height: clamp(244px, 30vw, 424px)"
+              >
+                <img
+                  src="assets/images/partner-program-1.png"
+                  class="max-h-full w-auto"
+                  width="393"
+                  height="393"
+                  alt=""
+                />
+              </div>
+              <div class="mb-1.5 md:mb-2">
+                <span
+                  class="inline px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xxl bg-light_blue text-xs sm:text-sm leading-[16px] sm:leading-[18px] text-primary"
+                  >Шаг 1</span
+                >
+              </div>
+              <p class="text-sm md:text-md leading-[18px] md:leading-[24px]">
+                Зарегистрируйтесь в&nbsp;личном кабинете
+              </p>
+            </div>
+            <div class="w-full sm:w-[calc(50%_-_6px)] md:w-[calc(50%_-_12px)] mb-10 md:mb-12">
+              <div
+                class="bg-light_blue rounded md:rounded-sm py-8 px-[26px] lg:px-[90px] flex justify-center items-center mb-3 md:mb-4"
+                style="height: clamp(244px, 30vw, 424px)"
+              >
+                <img
+                  src="assets/images/partner-program-2.png"
+                  class="max-h-full w-auto"
+                  width="393"
+                  height="188"
+                  alt=""
+                />
+              </div>
+              <div class="mb-1.5 md:mb-2">
+                <span
+                  class="inline px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xxl bg-light_blue text-xs sm:text-sm leading-[16px] sm:leading-[18px] text-primary"
+                  >Шаг 2</span
+                >
+              </div>
+              <p class="text-sm md:text-md leading-[18px] md:leading-[24px]">
+                Отправьте нам контакт клиента и&nbsp;выберите способ оплаты: процент или фиксированная стоимость
+              </p>
+            </div>
+            <div class="w-full sm:w-[calc(50%_-_6px)] md:w-[calc(50%_-_12px)] mb-10 md:mb-12">
+              <div
+                class="bg-light_blue rounded md:rounded-sm py-8 px-[26px] lg:px-[90px] flex justify-center items-center mb-3 md:mb-4"
+                style="height: clamp(244px, 30vw, 424px)"
+              >
+                <img
+                  src="assets/images/partner-program-3.png"
+                  class="max-h-full w-auto"
+                  width="393"
+                  height="188"
+                  alt=""
+                />
+              </div>
+              <div class="mb-1.5 md:mb-2">
+                <span
+                  class="inline px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xxl bg-light_blue text-xs sm:text-sm leading-[16px] sm:leading-[18px] text-primary"
+                  >Шаг 3</span
+                >
+              </div>
+              <p class="text-sm md:text-md leading-[18px] md:leading-[24px]">
+                Укажите реквизиты карты или счёта, на&nbsp;которые вам будет удобно получить вознаграждение
+              </p>
+            </div>
+            <div class="w-full sm:w-[calc(50%_-_6px)] md:w-[calc(50%_-_12px)] mb-10 md:mb-12">
+              <div
+                class="bg-light_blue rounded md:rounded-sm py-8 px-[26px] lg:px-[90px] flex justify-center items-center mb-3 md:mb-4"
+                style="height: clamp(244px, 30vw, 424px)"
+              >
+                <img
+                  src="assets/images/partner-program-4.png"
+                  class="max-h-full w-auto"
+                  width="393"
+                  height="188"
+                  alt=""
+                />
+              </div>
+              <div class="mb-1.5 md:mb-2">
+                <span
+                  class="inline px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xxl bg-light_blue text-xs sm:text-sm leading-[16px] sm:leading-[18px] text-primary"
+                  >Шаг 4</span
+                >
+              </div>
+              <p class="text-sm md:text-md leading-[18px] md:leading-[24px]">
+                Пока сделка не&nbsp;завершится, наблюдайте за&nbsp;тем, как ведётся работа с&nbsp;вашим клиентом
+              </p>
+            </div>
+            <div class="w-full sm:w-[calc(50%_-_6px)] md:w-[calc(50%_-_12px)]">
+              <div
+                class="bg-light_blue rounded md:rounded-sm py-8 px-[26px] lg:px-[90px] flex justify-center items-center mb-3 md:mb-4"
+                style="height: clamp(244px, 30vw, 424px)"
+              >
+                <img
+                  src="assets/images/partner-program-5.png"
+                  class="max-h-full w-auto"
+                  width="393"
+                  height="188"
+                  alt=""
+                />
+              </div>
+              <div class="mb-1.5 md:mb-2">
+                <span
+                  class="inline px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xxl bg-light_blue text-xs sm:text-sm leading-[16px] sm:leading-[18px] text-primary"
+                  >Шаг 5</span
+                >
+              </div>
+              <p class="text-sm md:text-md leading-[18px] md:leading-[24px]">
+                После завершения сделки получите оплату. Вам ничего для этого делать не&nbsp;нужно&nbsp;&mdash; деньги
+                поступят на&nbsp;вашу карту или счёт автоматически
+              </p>
+            </div>
+            <div class="w-full sm:w-[calc(50%_-_6px)] md:w-[calc(50%_-_12px)]">
+              <div
+                class="bg-light_blue rounded md:rounded-sm py-8 px-[26px] lg:px-[90px] flex justify-center items-center mb-3 md:mb-4"
+                style="height: clamp(244px, 30vw, 424px)"
+              >
+                <img
+                  src="assets/images/partner-program-6.png"
+                  class="max-h-full w-auto"
+                  width="393"
+                  height="188"
+                  alt=""
+                />
+              </div>
+              <div class="mb-1.5 md:mb-2">
+                <span
+                  class="inline px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xxl bg-light_blue text-xs sm:text-sm leading-[16px] sm:leading-[18px] text-primary"
+                  >Шаг 6</span
+                >
+              </div>
+              <p class="text-sm md:text-md leading-[18px] md:leading-[24px]">
+                Продолжайте передавать нам контакты клиентов и&nbsp;увеличивайте размер вознаграждения: чем больше
+                арендаторов вы&nbsp;к&nbsp;нам приведёте, тем больше мы&nbsp;будем вам платить
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-white px-4 pt-11 pb-4 2lg:px-8 2lg:pt-16 2lg:pb-8 rounded rounded-md mb-3 md:mb-6">
+        <div class="container">
+          <section class="mb-[72px] md:mb-[100px]">
+            <h2 class="text-lg md:text-xl font-bold mb-2 md:mb-4">О&nbsp;чём нас часто спрашивают</h2>
+            <div class="py-3 md:py-6 border-b border-b-line_blue">
+              <h4 class="leading-[22px] md:leading-[26px] text-md md:text-lg font-bold mb-3 md:mb-4">
+                Вы&nbsp;нарушаете закон о&nbsp;персональных данных?
+              </h4>
+              <p class="leading-[18px] md:leading-[24px] text-sm md:text-md">
+                Нет. Мы&nbsp;не&nbsp;передаём ваши контакты и&nbsp;контакты ваших клиентов третьим лицам и&nbsp;никогда
+                ничего не&nbsp;продаём клиентам, которых вы&nbsp;рекомендуете. Мы&nbsp;оказываем им&nbsp;консультации
+                в&nbsp;подборе офиса, а&nbsp;все наши услуги оплачивают бизнес-центры. Всё это происходит в&nbsp;рамках
+                закона, согласно
+                <a
+                  href="terms-of-use.html"
+                  class="text-primary inline-block border-b border-b-primary_20 hover:text-danger hover:border-b-danger_20 focus:text-danger focus:border-b-danger_20 w-fit leading-[16px] md:leading-[18px]"
+                  >оферте&nbsp;</a
+                >.
+              </p>
+            </div>
+            <div class="py-3 md:py-6 border-b border-b-line_blue">
+              <h4 class="leading-[22px] md:leading-[26px] text-md md:text-lg font-bold mb-3 md:mb-4">
+                Я&nbsp;передам вам клиента, а&nbsp;вы&nbsp;потом не&nbsp;заплатите?
+              </h4>
+              <p class="leading-[18px] md:leading-[24px] text-sm md:text-md">
+                Мы&nbsp;15&nbsp;лет работаем на&nbsp;рынке и&nbsp;дорожим нашей репутацией. Кроме того, по&nbsp;каждому
+                клиенту вы&nbsp;будете видеть подробный отчёт: на&nbsp;каком этапе находится сделка, какое
+                вознаграждение и&nbsp;когда вы&nbsp;получите. Если останутся вопросы, сможете задать их&nbsp;личному
+                менеджеру.
+              </p>
+            </div>
+            <div class="py-3 md:py-6 border-b border-b-line_blue">
+              <h4 class="leading-[22px] md:leading-[26px] text-md md:text-lg font-bold mb-3 md:mb-4">
+                Как и&nbsp;когда я&nbsp;получу оплату, если выбираю фиксированную оплату за&nbsp;переданный контакт?
+              </h4>
+              <p class="leading-[18px] md:leading-[24px] text-sm md:text-md">
+                Вы&nbsp;можете получить оплату как на&nbsp;личный счёт, так и&nbsp;на&nbsp;счёт&nbsp;ИП или юрлица.
+                Вознаграждение выплачиваем каждый месяц: оплату за&nbsp;предыдущий вы&nbsp;получите до&nbsp;10-го числа
+                текущего месяца.
+              </p>
+            </div>
+            <div class="pt-3 md:pt-6">
+              <h4 class="leading-[22px] md:leading-[26px] text-md md:text-lg font-bold mb-3 md:mb-4">
+                Когда я&nbsp;получу процент от&nbsp;брокерского вознаграждения?
+              </h4>
+              <p class="leading-[18px] md:leading-[24px] text-sm md:text-md">
+                Мы&nbsp;отправим вам деньги, как только получим брокерский процент по&nbsp;сделке на&nbsp;наш
+                счёт&nbsp;&mdash; обычно это занимает пару месяцев. В&nbsp;личном кабинете вы&nbsp;сможете отслеживать
+                статус по&nbsp;каждой сделке: когда был просмотр, подписал&nbsp;ли клиент договор, получено&nbsp;ли
+                вознаграждение от&nbsp;бизнес-центра. До&nbsp;10-го числа текущего месяца мы&nbsp;выплатим вам
+                вознаграждение за&nbsp;прошлый месяц.
+              </p>
+            </div>
+          </section>
+          <section
+            id="send-section"
+            class="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap lg:justify-center lg:justify-between bg-light_grey rounded-sm py-10 px-6"
+          >
+            <div class="flex flex-col gap-4 md:gap-6 mb-8 lg:mb-0 lg:w-[47%]">
+              <h2 class="text-lg md:text-xl font-bold">
+                Чтобы обсудить сотрудничество, <br />оставьте свой телефон, напишите <br />или позвоните нам сами
+              </h2>
+              <p>
+                <a class="text-gradient text-xxl md:text-2xl font-bold" href="tel:88122431097">8 812 243-10-97</a>
+              </p>
+              <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                <div class="flex items-center gap-2 sm:gap-4">
+                  <a href="#">
+                    <svg
+                      class="w-8 h-8 sm:w-[50px] sm:h-[50px]"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_385_300)">
+                        <path
+                          d="M25.0104 50.0208C38.8233 50.0208 50.0208 38.8233 50.0208 25.0104C50.0208 11.1975 38.8233 0 25.0104 0C11.1975 0 0 11.1975 0 25.0104C0 38.8233 11.1975 50.0208 25.0104 50.0208Z"
+                          fill="url(#paint0_linear_385_300)"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.3077 24.7394C18.5963 21.5741 23.4485 19.4708 25.885 18.4504C32.8196 15.5558 34.2773 15.056 35.2144 15.0352C35.4227 15.0352 35.8808 15.0768 36.1932 15.3267C36.4431 15.5349 36.5055 15.8057 36.5472 16.0139C36.5888 16.2222 36.6305 16.6595 36.5888 16.9927C36.214 20.9494 34.5897 30.5495 33.7567 34.9644C33.4027 36.8386 32.7154 37.4633 32.0491 37.5258C30.5913 37.6507 29.4876 36.5679 28.0924 35.6516C25.885 34.2147 24.6563 33.3192 22.5114 31.9031C20.0332 30.2788 21.6367 29.3833 23.0528 27.9256C23.4277 27.5508 29.8208 21.7199 29.9458 21.1993C29.9666 21.1368 29.9666 20.8869 29.8208 20.7619C29.675 20.637 29.4668 20.6786 29.3002 20.7203C29.0711 20.7619 25.5726 23.0943 18.7629 27.6965C17.7633 28.3838 16.8679 28.717 16.0557 28.6961C15.1603 28.6753 13.4526 28.1963 12.1615 27.7798C10.5997 27.2801 9.35019 27.0093 9.45431 26.1347C9.51678 25.6766 10.1415 25.2184 11.3077 24.7394Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_385_300"
+                          x1="24.9896"
+                          y1="0"
+                          x2="24.9896"
+                          y2="49.6252"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#2AABEE" />
+                          <stop offset="1" stop-color="#229ED9" />
+                        </linearGradient>
+                        <clipPath id="clip0_385_300">
+                          <rect width="50" height="50" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg
+                      class="w-8 h-8 sm:w-[50px] sm:h-[50px]"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_385_303)">
+                        <path
+                          d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"
+                          fill="#27D045"
+                        />
+                        <path
+                          d="M25.2086 36.8747C31.882 36.8747 37.2919 31.4648 37.2919 24.7913C37.2919 18.1179 31.882 12.708 25.2086 12.708C18.5351 12.708 13.1252 18.1179 13.1252 24.7913C13.1252 31.4648 18.5351 36.8747 25.2086 36.8747Z"
+                          stroke="white"
+                          stroke-width="2.91667"
+                        />
+                        <path
+                          d="M14.1669 31.6665L12.2502 38.4582L19.2919 36.4998L19.6669 34.3332L15.0835 35.7915L16.2919 31.4165L14.1669 31.6665Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M15.0002 35.833C15.0002 35.7913 16.4586 30.958 16.4586 30.958L19.9586 34.2497L15.0002 35.833Z"
+                          fill="#27D045"
+                        />
+                        <path
+                          d="M19.9868 18.8054C19.5614 19.1006 19.1987 19.4772 18.9198 19.9135C18.6408 20.3498 18.4512 20.837 18.3618 21.3471C18.1535 22.9721 19.1535 24.6387 19.1535 24.6387C20.1678 26.1479 21.3722 27.5203 22.7368 28.7221C23.9305 29.6667 25.2858 30.3867 26.7368 30.8471C27.5832 31.185 28.509 31.2718 29.4035 31.0971C30.1963 30.8795 30.8976 30.4118 31.4034 29.7637C31.522 29.4689 31.6059 29.1613 31.6535 28.8471C31.7012 28.5713 31.7012 28.2895 31.6535 28.0137C31.6118 27.7221 28.6118 26.3471 28.3201 26.4304C28.0285 26.5137 27.7784 27.0554 27.4451 27.5137C27.1118 27.9721 26.9868 28.1804 26.6535 28.1804C26.3201 28.1804 24.8618 27.5971 23.4868 26.3471C22.7014 25.6661 22.0876 24.8096 21.6951 23.8471C21.6951 23.8471 21.9451 23.5554 22.2785 23.0971C22.5379 22.8129 22.7238 22.4696 22.8201 22.0971C22.8201 21.8887 21.6535 18.9304 21.3618 18.8054C20.9057 18.7413 20.4429 18.7413 19.9868 18.8054Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_385_303">
+                          <rect width="50" height="50" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <span class="text-md md:text-2lg">или напишите нам в&nbsp;мессенджер</span>
+              </div>
+            </div>
+            <div class="w-full lg:w-[47%]">
+              <form class="flex flex-col form-send">
+                <div class="mb-3 w-full">
+                  <input
+                    type="tel"
+                    class="rounded p-4 bg-white placeholder:text-dark_grey border border-white focus:border-primary focus:placeholder:text-dark_grey max-w-[500px] input-send w-full mb-1"
+                    placeholder="Номер телефона"
+                    pattern="\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}"
+                    inputmode="numeric"
+                    title="Phone number format: +7 XXX XXX XX XX"
+                    required
+                  />
+                  <p class="text-danger text-xs sm:text-sm input-send-error-text text-xs md:text-sm hidden">
+                    Обязательное поле
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="text-white py-[13px] lg:py-3.5 px-6 lg:px-8 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary max-w-[500px] btn-send lg:leading-[28px]"
+                >
+                  Перезвоните мне
+                </button>
+              </form>
+              <div class="success-send flex flex-col items-center hidden">
+                <div class="bg-white rounded-full w-[60px] h-[60px] flex justify-center items-center mb-2 md:mb-3">
+                  <svg
+                    class="animated-path"
+                    width="28"
+                    height="19"
+                    viewBox="0 0 28 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M2 9.57129L10 16.4284L26 1.57129" stroke="black" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <p class="text-md md:text-2lg mb-6 md:mb-8 max-w-[500px] text-center">
+                  Спасибо! Наши менеджеры свяжутся с&nbsp;вами как можно скорее!
+                </p>
+                <button
+                  type="button"
+                  class="text-white py-3.5 px-6 lg:px-8 lg:py-4 bg-primary rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary max-w-[500px] btn-send-more"
+                >
+                  Оставить еще одну заявку
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="bg-white px-4 2lg:px-8 py-4 md:py-6 rounded rounded-md">
+        <div class="container">
+          <div class="flex flex-col xs:flex-row gap-4 xs:justify-between xs:items-center">
+            <p>&copy;&nbsp;2010&nbsp;&mdash; 2024</p>
+            <p>
+              <a
+                href="mailto:hello@biz-cen.ru"
+                class="text-primary inline-block border-b border-b-primary_20 hover:text-danger leading-[16px] lg:leading-[18px] hover:border-b-danger_20 focus:text-danger focus:border-b-danger_20"
+                >hello@biz-cen.ru</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>

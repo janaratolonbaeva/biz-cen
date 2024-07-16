@@ -165,4 +165,11 @@
     transition: all 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
     transition: all 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96), all 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
   }
+
+  .menu.active li:nth-child(4) {
+    -webkit-transition: all 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    transition: all 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    transition: all 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    transition: all 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96), all 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+  }
 }
