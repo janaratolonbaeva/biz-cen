@@ -160,4 +160,13 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.closest('.dropdown').querySelector('.open-dropdown').classList.remove('active');
     });
   });
+
+  // event focus on all inputs
+  const allInputs = document.querySelectorAll('input[type="number"]');
+
+  allInputs.forEach((input) => {
+    input.addEventListener('input', function (e) {
+      input.value = input.value.replace(/[^0-9]/g, '');
+    });
+  });
 });

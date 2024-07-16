@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biz-cen.ru | Профиль</title>
-    <link href="../../assets/images/favicon.ico" rel="shortcut icon" />
+    <title>Biz-cen.ru | Политика конфиденциальности</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/styles/style.css" />
-    <link rel="stylesheet" href="../../assets/styles/media.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/media.css" />
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/addons/cleave-phone.ru.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../../assets/js/admin/tailwind.config.js"></script>
+    <script src="assets/js/admin/tailwind.config.js"></script>
   </head>
   <body class="admin-body">
     <div class="main">
@@ -146,190 +146,219 @@
       </div>
       <div class="p-3 md:p-6">
         <div class="container-admin">
-          <div
-            class="flex py-[11px] sm:py-4 pr-3 sm:pr-4 pl-[40px] sm:pl-[54px] bg-white rounded-xs md:rounded text-green relative mb-3 md:mb-6"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-2.5 sm:top-3.5 left-3 sm:left-4 w-5 h-5 sm:w-6 sm:h-6"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M12.0002 23.6668C18.4435 23.6668 23.6668 18.4435 23.6668 12.0002C23.6668 5.55684 18.4435 0.333496 12.0002 0.333496C5.55684 0.333496 0.333496 5.55684 0.333496 12.0002C0.333496 18.4435 5.55684 23.6668 12.0002 23.6668ZM17.3575 9.0374C17.6542 8.65595 17.5855 8.10621 17.204 7.80952C16.8226 7.51283 16.2728 7.58155 15.9762 7.963L11.3013 13.9735C11.1974 14.1072 11.0018 14.1245 10.876 14.0112L7.91885 11.3498C7.55965 11.0265 7.0064 11.0557 6.68312 11.4149C6.35984 11.7741 6.38896 12.3273 6.74816 12.6506L9.70529 15.312C10.5863 16.1049 11.955 15.9835 12.6827 15.0479L17.3575 9.0374Z"
-                fill="#009B22"
-              />
-            </svg>
-            <p class="text-sm sm:text-base leading-[18px] sm:leading-[20px]">Профиль обновлен</p>
-          </div>
-          <div class="bg-white rounded-sm md:rounded-md p-4 md:p-6 min-h-[172px] sm:min-h-[436px]">
-            <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Профиль</h3>
-            <div class="max-w-[444px]">
-              <form method="POST">
-                <div class="mb-6 md:mb-8">
-                  <h3 class="text-md md:text-lg mb-4 md:mb-6 font-bold">Данные профиля</h3>
-                  <div class="flex flex-col gap-2 md:gap-2">
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent min-h-[54px] md:min-h-14"
-                      >
-                        <label class="text-xs text-text_grey">Имя*</label>
-                        <input type="tel" class="bg-transparent require-input" name="username" id="username" />
-                      </fieldset>
-                      <p class="error-text text-xs md:text-sm hidden text-danger text-sm"></p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent min-h-[54px] md:min-h-14"
-                      >
-                        <label class="text-xs text-text_grey">Фамилия</label>
-                        <input type="text" class="bg-transparent text-sm md:text-base" />
-                      </fieldset>
-                      <p class="error-text text-xs md:text-sm hidden text-danger text-sm"></p>
-                    </div>
-                    <div id="email-block" class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent min-h-[54px] md:min-h-14"
-                      >
-                        <label for="email" class="text-xs text-text_grey">Email (логин)</label>
-                        <input
-                          type="email"
-                          class="bg-transparent text-sm md:text-base"
-                          autocomplete="username"
-                          name="email"
-                          id="email"
-                        />
-                      </fieldset>
-                      <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Некорректный ввод</p>
-                    </div>
-                    <div id="phone-block" class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent min-h-[54px] md:min-h-14"
-                      >
-                        <label for="phone" class="text-xs text-text_grey">Телефон*</label>
-                        <input type="tel" class="bg-transparent require-input" name="phone" id="phone" />
-                      </fieldset>
-                      <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Некорректный ввод</p>
-                    </div>
-                    <div class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent min-h-[54px] md:min-h-14"
-                      >
-                        <label class="text-xs text-text_grey">Компания</label>
-                        <input type="tel" class="bg-transparent text-sm md:text-base" name="username" id="username" />
-                      </fieldset>
-                      <p class="error-text text-xs md:text-sm hidden text-danger text-sm"></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-4 md:mb-6">
-                  <h3 class="text-md md:text-lg mb-4 md:mb-6 font-bold">Изменить пароль</h3>
-                  <div class="flex flex-col gap-2 md:gap-2">
-                    <div id="password-block" class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent min-h-[54px] md:min-h-14 relative"
-                      >
-                        <label class="text-xs text-text_grey">Пароль</label>
-                        <input
-                          id="password"
-                          type="password"
-                          class="bg-transparent text-sm md:text-base"
-                          autocomplete="current-password"
-                        />
-                        <button type="button" class="btn-eye absolute right-4 top-4">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="eye-close w-5 h-5 md:w-6 md:h-6"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M3.46967 4.53033C3.17678 4.23744 3.17678 3.76256 3.46967 3.46967C3.76256 3.17678 4.23744 3.17678 4.53033 3.46967L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L16.6429 17.7036C15.2337 18.4709 13.66 19 12 19C8.18448 19 4.82549 16.2047 2.86971 14.1469C1.7101 12.9268 1.7101 11.0732 2.86971 9.8531C3.69953 8.98001 4.78196 7.97414 6.04468 7.10534L3.46967 4.53033ZM9.41536 10.476C9.15145 10.9227 9 11.4436 9 12C9 13.6569 10.3431 15 12 15C12.5564 15 13.0773 14.8486 13.524 14.5846L9.41536 10.476ZM12 5C15.8155 5 19.1745 7.79533 21.1303 9.8531C22.2899 11.0732 22.2899 12.9268 21.1303 14.1469C20.6902 14.6099 20.1791 15.1103 19.6078 15.6077L9.4127 5.41264C10.2422 5.15256 11.1086 5 12 5Z"
-                              fill="#6E789C"
-                            />
-                          </svg>
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="eye-open hidden mt-[-2.5px] w-5 h-5 md:w-6 md:h-6"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M12.75 2.75C12.75 2.33579 12.4142 2 12 2C11.5858 2 11.25 2.33579 11.25 2.75V4.75C11.25 5.16421 11.5858 5.5 12 5.5C12.4142 5.5 12.75 5.16421 12.75 4.75V2.75ZM3.53033 5.21967C3.23744 4.92678 2.76256 4.92678 2.46967 5.21967C2.17678 5.51256 2.17678 5.98744 2.46967 6.28033L3.96967 7.78033C4.26256 8.07322 4.73744 8.07322 5.03033 7.78033C5.32322 7.48744 5.32322 7.01256 5.03033 6.71967L3.53033 5.21967ZM21.5303 6.28033C21.8232 5.98744 21.8232 5.51256 21.5303 5.21967C21.2374 4.92678 20.7626 4.92678 20.4697 5.21967L18.9697 6.71967C18.6768 7.01256 18.6768 7.48744 18.9697 7.78033C19.2626 8.07322 19.7374 8.07322 20.0303 7.78033L21.5303 6.28033ZM20.8772 12.3211C22.3743 13.7542 22.3743 16.2458 20.8772 17.6789C18.8134 19.6545 15.6042 22 12 22C8.3958 22 5.18661 19.6545 3.12281 17.6789C1.62573 16.2458 1.62573 13.7542 3.12281 12.3211C5.18661 10.3455 8.3958 8 12 8C15.6042 8 18.8134 10.3455 20.8772 12.3211ZM15 15C15 16.6569 13.6568 18 12 18C10.3431 18 8.99997 16.6569 8.99997 15C8.99997 13.3431 10.3431 12 12 12C13.6568 12 15 13.3431 15 15Z"
-                              fill="#6E789C"
-                            />
-                          </svg>
-                        </button>
-                      </fieldset>
-                      <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Пароли не совпадают</p>
-                    </div>
-                    <div id="new-password-block" class="input-block">
-                      <fieldset
-                        class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger mb-1 border border-transparent min-h-[54px] md:min-h-14 relative"
-                      >
-                        <label class="text-xs text-text_grey">Пароль</label>
-                        <input
-                          id="new-password"
-                          type="password"
-                          class="bg-transparent text-sm md:text-base"
-                          autocomplete="current-password"
-                        />
-                        <button type="button" class="btn-eye absolute right-4 top-4">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="eye-close w-5 h-5 md:w-6 md:h-6"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M3.46967 4.53033C3.17678 4.23744 3.17678 3.76256 3.46967 3.46967C3.76256 3.17678 4.23744 3.17678 4.53033 3.46967L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L16.6429 17.7036C15.2337 18.4709 13.66 19 12 19C8.18448 19 4.82549 16.2047 2.86971 14.1469C1.7101 12.9268 1.7101 11.0732 2.86971 9.8531C3.69953 8.98001 4.78196 7.97414 6.04468 7.10534L3.46967 4.53033ZM9.41536 10.476C9.15145 10.9227 9 11.4436 9 12C9 13.6569 10.3431 15 12 15C12.5564 15 13.0773 14.8486 13.524 14.5846L9.41536 10.476ZM12 5C15.8155 5 19.1745 7.79533 21.1303 9.8531C22.2899 11.0732 22.2899 12.9268 21.1303 14.1469C20.6902 14.6099 20.1791 15.1103 19.6078 15.6077L9.4127 5.41264C10.2422 5.15256 11.1086 5 12 5Z"
-                              fill="#6E789C"
-                            />
-                          </svg>
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="eye-open hidden mt-[-2.5px] w-5 h-5 md:w-6 md:h-6"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M12.75 2.75C12.75 2.33579 12.4142 2 12 2C11.5858 2 11.25 2.33579 11.25 2.75V4.75C11.25 5.16421 11.5858 5.5 12 5.5C12.4142 5.5 12.75 5.16421 12.75 4.75V2.75ZM3.53033 5.21967C3.23744 4.92678 2.76256 4.92678 2.46967 5.21967C2.17678 5.51256 2.17678 5.98744 2.46967 6.28033L3.96967 7.78033C4.26256 8.07322 4.73744 8.07322 5.03033 7.78033C5.32322 7.48744 5.32322 7.01256 5.03033 6.71967L3.53033 5.21967ZM21.5303 6.28033C21.8232 5.98744 21.8232 5.51256 21.5303 5.21967C21.2374 4.92678 20.7626 4.92678 20.4697 5.21967L18.9697 6.71967C18.6768 7.01256 18.6768 7.48744 18.9697 7.78033C19.2626 8.07322 19.7374 8.07322 20.0303 7.78033L21.5303 6.28033ZM20.8772 12.3211C22.3743 13.7542 22.3743 16.2458 20.8772 17.6789C18.8134 19.6545 15.6042 22 12 22C8.3958 22 5.18661 19.6545 3.12281 17.6789C1.62573 16.2458 1.62573 13.7542 3.12281 12.3211C5.18661 10.3455 8.3958 8 12 8C15.6042 8 18.8134 10.3455 20.8772 12.3211ZM15 15C15 16.6569 13.6568 18 12 18C10.3431 18 8.99997 16.6569 8.99997 15C8.99997 13.3431 10.3431 12 12 12C13.6568 12 15 13.3431 15 15Z"
-                              fill="#6E789C"
-                            />
-                          </svg>
-                        </button>
-                      </fieldset>
-                      <p class="error-text text-xs md:text-sm hidden text-danger text-sm">Пароли не совпадают</p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  class="text-white py-3 md:py-[14px] px-6 md:px-8 bg-primary rounded-xs md:rounded hover:bg-danger focus:bg-danger disabled:opacity-50 disabled:hover:bg-primary leading-[18px] md:leading-[20px] w-full text-sm md:text-base"
-                >
-                  Сохранить
-                </button>
-              </form>
+          <div class="flex flex-col 2md:flex-row relative gap-3 md:gap-6">
+            <div class="bg-white rounded-sm md:rounded-md p-4 md:p-6 w-full 2md:w-[254px] 2md:flex-none">
+              <ul class="offer-menu flex flex-col gap-3 md:gap-4 text-sm md:text-base">
+                <li><a href="terms-of-use.html">Условия использования</a></li>
+                <li><a href="privacy-policy.html" class="text-primary">Политика конфиденциальности</a></li>
+                <li><a href="affiliate-program-terms.html">Условия партнерской программы</a></li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm md:rounded-md p-4 md:p-6 2md:grow">
+              <h2 class="text-lg md:text-xl font-bold mb-6 md:mb-8">Политика конфиденциальности</h2>
+              <div class="mb-6 md:mb-8">
+                <h3 class="text-md md:text-lg font-bold mb-3 md:mb-4">1. Общие положения</h3>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  1.1 Настоящая Политика конфиденциальности (далее&nbsp;&mdash; Политика) разработана и&nbsp;применяется
+                  Обществом с&nbsp;ограниченной ответственностью &laquo;Биз-цен&raquo; : ИНН 7816496146, КПП 781601001,
+                  Юридический адрес: 192284, г. Санкт-Петербург, ул. Пловдивская, д.2, кв.432,; Почтовый адрес: 191040,
+                  г. Санкт-Петербург, Лиговский&nbsp;пр., д.&nbsp;50, к.&nbsp;17, оф.&nbsp;22 , а&nbsp;также
+                  юридическими лицами, аффилированными с&nbsp;Оператором, дочерними и&nbsp;зависимыми организациями
+                  Оператора и&nbsp;компаниями, входящими в&nbsp;группу компаний &laquo;Биз-цен&raquo;
+                  (далее&nbsp;&mdash; Оператор). Также Политика применяется к&nbsp;другим лицам, которым Оператор
+                  поручает обработку персональных данных в&nbsp;соответствии
+                  с&nbsp;п.&nbsp;2&nbsp;ч.&nbsp;1&nbsp;ст.&nbsp;18.1 Федерального закона от&nbsp;27.07.2006&nbsp;N
+                  152-ФЗ &laquo;О&nbsp;персональных данных&raquo;. 1.2 Политика определяет порядок обработки
+                  персональных данных Оператором, включая сбор, хранение, передачу и&nbsp;другие виды обработки данных.
+                  В&nbsp;ней также описаны требования к&nbsp;защите персональных данных физических лиц
+                  (далее&nbsp;&mdash; Пользователи или субъекты персональных данных), пользующихся сервисами
+                  и&nbsp;продуктами сайта
+                  <a
+                    href="https://biz-cen.ru/"
+                    class="leading-[18px] md:leading-[20px] text-primary underline hover:text-danger"
+                    >https://biz-cen.ru/</a
+                  >
+                  (далее&nbsp;&mdash; Сайт). 1.3 Цель Политики&nbsp;&mdash; защита прав и&nbsp;свобод человека при
+                  обработке его персональных данных, включая защиту права на&nbsp;неприкосновенность частной жизни,
+                  личную и&nbsp;семейную тайну. 1.4 Пользователь принимает решение о&nbsp;предоставлении своих
+                  персональных данных добровольно и&nbsp;в&nbsp;своем интересе. Используя Сайт, Пользователь соглашается
+                  с&nbsp;настоящей Политикой и&nbsp;условиями обработки своих персональных данных. Если Пользователь
+                  не&nbsp;согласен с&nbsp;условиями Политики, он&nbsp;должен прекратить использование Сайта.
+                </p>
+              </div>
+              <div class="mb-6 md:mb-8">
+                <h3 class="text-md md:text-lg font-bold mb-3 md:mb-4">
+                  2. Обработка персональных данных Пользователей
+                </h3>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.1 Обработка персональных данных включает любые действия с&nbsp;данными, такие как сбор, запись,
+                  систематизация, хранение, обновление, использование, передача, обезличивание, блокирование, удаление
+                  и&nbsp;уничтожение.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.2 Персональные данные, которые обрабатываются в&nbsp;рамках этой Политики, предоставляются
+                  Пользователем при заполнении регистрационной формы на&nbsp;Сайте и&nbsp;включают:
+                </p>
+                <ul class="text-sm md:text-base list-disc pl-6 mb-2 md:mb-3">
+                  <li>Фамилию</li>
+                  <li>Имя</li>
+                  <li>Отчество, если есть</li>
+                  <li>Контактный телефон</li>
+                  <li>Адрес электронной почты (e-mail)</li>
+                  <li>Банковские реквизиты</li>
+                  <li>ОГРНИП/номер и&nbsp;дата свидетельства о&nbsp;постановке на&nbsp;учет НПД</li>
+                  <li>Другую информацию, относящуюся к&nbsp;определенному физическому лицу.</li>
+                </ul>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.3.Данные, обрабатываемые Биз-цен, включают информацию, указанную Пользователями в&nbsp;формах
+                  обратной связи на&nbsp;Сайте, а&nbsp;также данные, предоставленные для обратной связи.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.4. Биз-цен вправе использовать технологию &laquo;cookies&raquo;. &laquo;Cookies&raquo;
+                  не&nbsp;содержат конфиденциальную информацию. Пользователь настоящим дает согласие на&nbsp;сбор,
+                  анализ и&nbsp;использование cookies, в&nbsp;том числе третьими лицами для целей формирования
+                  статистики и&nbsp;оптимизации рекламных сообщений. Отключение cookies может привести
+                  к&nbsp;невозможности доступа к&nbsp;частям Сайта, требующим авторизации.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.5. Биз-цен получает информацию об&nbsp;ip-адресе Пользователя Сайта. Данная информация
+                  не&nbsp;используется для установления личности Пользователя.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.6 Также для решения технических проблем Биз-цен обрабатывает следующие обезличенные данные:
+                </p>
+                <ul class="text-sm md:text-base list-disc pl-6 mb-2 md:mb-3">
+                  <li>IP адрес</li>
+                  <li>Информация из&nbsp;cookies</li>
+                  <li>Информация о&nbsp;браузере или программе доступа</li>
+                  <li>Время доступа</li>
+                  <li>Адрес страницы с&nbsp;рекламным блоком</li>
+                  <li>Адрес предыдущей страницы (реферер)</li>
+                </ul>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.7 Персональные данные хранятся на&nbsp;электронных носителях и&nbsp;обрабатываются
+                  автоматизированными системами, за&nbsp;исключением случаев, требующих неавтоматизированной обработки
+                  по&nbsp;законодательству&nbsp;РФ.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">2.5 Цели обработки персональных данных включают:</p>
+                <ul class="text-sm md:text-base list-disc pl-6 mb-2 md:mb-3">
+                  <li>Установление обратной связи с&nbsp;Пользователем</li>
+                  <li>Предоставление доступа к&nbsp;Сайту и&nbsp;его сервисам</li>
+                  <li>Продвижение услуг и&nbsp;предложений Биз-цен на&nbsp;рынке коммерческой недвижимости</li>
+                  <li>Оказание консультационных услуг</li>
+                  <li>Оказание информационных услуг</li>
+                  <li>Проведение исследований и&nbsp;опросов для улучшения услуг</li>
+                  <li>Выполнение обязанностей, возложенных законодательством&nbsp;РФ</li>
+                </ul>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.8. Пользователи могут подписаться на&nbsp;новостную рассылку и&nbsp;в&nbsp;любое время отписаться,
+                  уведомив Биз-цен по&nbsp;адресу hello@biz-cen.ru или выбрав ссылку на&nbsp;отписку в&nbsp;сообщении.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  2.9. Биз-цен может использовать персональные данные для организации акций и&nbsp;мероприятий
+                  на&nbsp;Сайте, при условии участия Пользователя.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">2.9.1. Обработка данных организована на&nbsp;принципах:</p>
+                <ul class="text-sm md:text-base list-disc pl-6 mb-2 md:mb-3">
+                  <li>Законности и&nbsp;справедливости</li>
+                  <li>Достоверности и&nbsp;достаточности данных</li>
+                  <li>Соответствия данных целям обработки</li>
+                  <li>Обеспечения точности и&nbsp;актуальности данных</li>
+                  <li>Ограничения хранения данных только на&nbsp;период, необходимый для целей обработки.</li>
+                </ul>
+                <p class="text-sm md:text-base">
+                  2.9.2. Персональные данные могут быть переданы государственным органам&nbsp;РФ только
+                  по&nbsp;основаниям и&nbsp;в&nbsp;порядке, установленным законодательством&nbsp;РФ.
+                </p>
+              </div>
+              <div class="mb-6 md:mb-8">
+                <h3 class="text-md md:text-lg font-bold mb-3 md:mb-4">
+                  3. Меры по&nbsp;обеспечению безопасности персональных данных
+                </h3>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  3.1 Биз-цен обрабатывает и&nbsp;защищает персональные данные в&nbsp;соответствии с&nbsp;требованиями
+                  Федерального закона &#8470;&nbsp;152-ФЗ &laquo;О&nbsp;персональных данных&raquo; и&nbsp;других
+                  нормативных актов.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  3.2 При обработке данных Биз-цен обеспечивает их&nbsp;конфиденциальность и&nbsp;безопасность, принимая
+                  надлежащие меры защиты в&nbsp;информационных системах.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  3.3 Биз-цен принимает организационные и&nbsp;технические меры для защиты данных от&nbsp;неправомерного
+                  или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения,
+                  а&nbsp;также от&nbsp;других неправомерных действий. Эти меры соответствуют статье 19&nbsp;Федерального
+                  закона &#8470;&nbsp;152-ФЗ.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  3.4&nbsp;На основании внутренних нормативных актов Биз-цен назначает ответственного
+                  за&nbsp;организацию обработки персональных данных.
+                </p>
+                <p class="text-sm md:text-base">
+                  Эти меры направлены на&nbsp;защиту прав и&nbsp;свобод Пользователей и&nbsp;обеспечение безопасности
+                  их&nbsp;персональных данных.
+                </p>
+              </div>
+              <div class="mb-6 md:mb-8">
+                <h3 class="text-md md:text-lg font-bold mb-3 md:mb-4">4. Права субъекта персональных данных</h3>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  4.1 Пользователи имеют право на&nbsp;полную информацию о&nbsp;своих данных, обрабатываемых Биз-цен.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  4.2 Пользователи имеют право на&nbsp;доступ к&nbsp;своим данным, включая получение копии любой записи,
+                  содержащей их&nbsp;персональные данные, за&nbsp;исключением случаев, предусмотренных законом.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  4.3 Пользователи имеют право на&nbsp;уточнение, блокирование или уничтожение своих данных, если они
+                  являются неполными, устаревшими, неточными, незаконно полученными или не&nbsp;являются необходимыми
+                  для заявленной цели обработки.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  4.4 Пользователи имеют право отозвать согласие на&nbsp;обработку своих персональных данных.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  4.5 Пользователи имеют право на&nbsp;принятие предусмотренных законом мер по&nbsp;защите своих прав.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  4.6 Пользователи имеют право на&nbsp;осуществление других прав, предусмотренных
+                  законодательством&nbsp;РФ.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  4.7 Пользователи могут направлять запросы Биз-цен относительно использования своих данных,
+                  а&nbsp;также отзыв согласия на&nbsp;обработку данных, в&nbsp;письменной форме или в&nbsp;форме
+                  электронного документа, подписанного электронной подписью, по&nbsp;адресу электронной почты:
+                  <a
+                    href="mailto:hello@biz-cen.ru"
+                    class="leading-[18px] md:leading-[20px] text-primary underline hover:text-danger"
+                    >hello@biz-cen.ru</a
+                  >. Запрос должен содержать номер удостоверяющего личность документа, сведения о&nbsp;дате его выдачи
+                  и&nbsp;выдавшем его органе, информацию о&nbsp;факте обработки данных, адрес электронной почты,
+                  контактный телефон и&nbsp;подпись.
+                </p>
+                <p class="text-sm md:text-base">
+                  Биз-цен блокирует персональные данные Пользователя с&nbsp;момента обращения или запроса Пользователя,
+                  его законного представителя ( для физического лица по&nbsp;нотариальной доверенности) или
+                  уполномоченного органа по&nbsp;защите прав субъектов персональных данных на&nbsp;период проверки
+                  в&nbsp;случае выявления недостоверных данных или неправомерных действий.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-md md:text-lg font-bold mb-3 md:mb-4">5. Заключительные положения</h3>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  5.1 Биз-цен не&nbsp;контролирует и&nbsp;не&nbsp;несет ответственности за&nbsp;переход Пользователя
+                  на&nbsp;сайты третьих лиц по&nbsp;ссылкам, доступным на&nbsp;Сайте и&nbsp;последствия такого перехода.
+                </p>
+                <p class="text-sm md:text-base mb-2 md:mb-3">
+                  5.2 Биз-цен может вносить изменения в&nbsp;Политику в&nbsp;любое время по&nbsp;своему усмотрению,
+                  включая случаи, когда это требуется по&nbsp;законодательству Российской Федерации. Обновленная версия
+                  Политики будет размещена на&nbsp;Сайте.
+                </p>
+                <p class="text-sm md:text-base">
+                  5.3 Все вопросы, связанные с&nbsp;обработкой персональных данных, не&nbsp;урегулированные настоящей
+                  Политикой, разрешаются в&nbsp;соответствии с&nbsp;действующим законодательством Российской Федерации
+                  в&nbsp;области персональных данных.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -803,7 +832,7 @@
         });
       });
     </script>
-    <script src="../../assets/js/login.js"></script>
-    <script src="../../assets/js/send-client-form.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/send-client-form.js"></script>
   </body>
 </html>

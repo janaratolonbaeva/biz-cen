@@ -147,7 +147,7 @@
       <div class="p-3 md:p-6">
         <div class="container-admin">
           <div
-            class="bg-white rounded-md p-4 md:p-6 max-w-[600px] md:min-h-[188px] flex flex-col justify-between mb-3 md:mb-6"
+            class="bg-white rounded-sm md:rounded-md p-4 md:p-6 max-w-[600px] md:min-h-[188px] flex flex-col justify-between mb-3 md:mb-6"
           >
             <h3 class="text-lg md:text-xl font-bold mb-10 md:mb-0">Баланс</h3>
             <div>
@@ -201,7 +201,7 @@
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-md p-4 md:p-6">
+          <div class="bg-white rounded-sm md:rounded-md p-4 md:p-6">
             <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">История платежей</h3>
             <div class="flex justify-center items-center py-10 sm:pt-14 sm:pb-20">
               <div class="flex flex-col gap-3 md:gap-6 items-center">
@@ -460,7 +460,7 @@
                 <fieldset
                   class="rounded-xs md:rounded bg-light_blue py-2 px-3 md:px-4 flex flex-col peer-invalid:border-danger border border-transparent h-[54px] md:h-14"
                 >
-                  <label for="footage" class="text-xs mt-1 text-text_grey after:content-['*']">Метраж</label>
+                  <label for="footage" class="text-xs text-text_grey after:content-['*']">Метраж</label>
                   <input
                     type="number"
                     class="bg-transparent placeholder:text-placeholder_text focus:placeholder:text-placeholder_text require-input [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
@@ -591,17 +591,17 @@
                 </div>
                 <div class="sm:w-[calc(50%_-_4px)]">
                   <label
-                    class="py-[14px] px-3 md:px-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive min-h-[50px] md:min-h-[52px] mb-1"
+                    class="py-[14px] px-3 md:px-4 border border-line_blue rounded-xs md:rounded flex justify-between items-center cursor-pointer gap-3 has-[:disabled]:bg-input_inactive has-[:disabled]:cursor-not-allowed min-h-[50px] md:min-h-[52px] mb-1 has-[:disabled]:border-input_inactive"
                   >
-                    <span class="text-sm sm:text-base peer-disabled/percent:text-text_grey"
-                      >20% от суммы сделки, после заключения договора</span
-                    >
                     <input
                       id="percent-reward"
                       type="radio"
                       name="reward"
                       class="radio-input hidden peer/percent peer"
                     />
+                    <span class="text-sm sm:text-base peer-disabled/percent:text-text_grey"
+                      >20% от суммы сделки, после заключения договора</span
+                    >
                     <span
                       class="rounded-full border border-text_grey w-[18px] sm:w-5 h-[18px] sm:h-5 peer-disabled/percent:inline-block hidden flex-none"
                     ></span>

@@ -152,22 +152,22 @@ body {
 
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
-  color: var(--main-blue);
+  opacity: 0;
 }
 
 input:focus::-moz-placeholder,
 textarea:focus::-moz-placeholder {
-  color: var(--main-blue);
+  opacity: 0;
 }
 
 input:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder {
-  color: var(--main-blue);
+  opacity: 0;
 }
 
 input:focus:-moz-placeholder,
 textarea:focus:-moz-placeholder {
-  color: var(--main-blue);
+  opacity: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -507,3 +507,4 @@ textarea:focus:-moz-placeholder {
   flex-direction: column;
   gap: 12px;
 }
+
