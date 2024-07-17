@@ -15,6 +15,8 @@
 13. <a href="https://janaratolonbaeva.github.io/biz-cen/privacy-policy" target="_blank">privacy policy</a>
 14. <a href="https://janaratolonbaeva.github.io/biz-cen/terms-of-cooperation-no-entry" target="_blank">terms of cooperation no entry</a>
 15. <a href="https://janaratolonbaeva.github.io/biz-cen/partner" target="_blank">partner</a>
+16. <a href="https://janaratolonbaeva.github.io/biz-cen/partner-broker" target="_blank">partner broker</a>
+17. <a href="https://janaratolonbaeva.github.io/biz-cen/partner-business" target="_blank">partner business</a>
 
 
 Комментарии:
